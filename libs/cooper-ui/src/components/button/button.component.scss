@@ -9,24 +9,50 @@
             border border-transparent
             focus:outline-none focus:ring-2 focus:ring-offset-1;
 
+        ::ng-deep span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre;
+        }
+
         &.size-xs {
-            @apply text-xs px-2 py-1;
+            @apply text-xs px-2 py-1 gap-1;
+
+            ::ng-deep i-tabler {
+                @apply h-3 w-3;
+            }
         }
 
         &.size-sm {
-            @apply text-sm px-3 py-1.5;
+            @apply text-sm px-3 py-1.5 gap-1;
+
+            ::ng-deep i-tabler {
+                @apply h-4 w-4;
+            }
         }
 
         &.size-md {
-            @apply text-sm px-4 py-2;
+            @apply text-sm px-4 py-2 gap-1;
+
+            ::ng-deep i-tabler {
+                @apply h-4 w-4;
+            }
         }
 
         &.size-lg {
-            @apply text-base px-5 py-2.5;
+            @apply text-base px-5 py-2.5 gap-2;
+
+            ::ng-deep i-tabler {
+                @apply h-5 w-5;
+            }
         }
 
         &.size-xl {
-            @apply text-base px-6 py-3;
+            @apply text-base px-6 py-3 gap-2;
+
+            ::ng-deep i-tabler {
+                @apply h-5 w-5;
+            }
         }
 
         &.rounded {
