@@ -13,8 +13,8 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "cooper",
-            "style": "camelCase"
+            "prefix": "cui",
+            "style": "kebab-case"
           }
         ],
         "@angular-eslint/component-selector": [
