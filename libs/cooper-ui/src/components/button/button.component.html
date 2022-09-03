@@ -1,0 +1,20 @@
+<button
+    [class.disabled]="disabled"
+    [class.size-xs]="size==='xs'"
+    [class.size-sm]="size==='sm'"
+    [class.size-md]="size==='md'"
+    [class.size-lg]="size==='lg'"
+    [class.size-xl]="size==='xl'"
+    [class.mode-regular]="mode==='regular'"
+    [class.mode-outline]="mode==='outline'"
+    [class.mode-flat]="mode==='flat'"
+    [class.color-primary]="color==='primary'"
+    [class.color-accent]="color==='accent'"
+    [class.color-success]="color==='success'"
+    [class.color-warning]="color==='warning'"
+    [class.color-danger]="color==='danger'"
+    [class.color-dark]="color==='dark'"
+    [class.rounded]="rounded"
+>
+    <ng-content></ng-content>
+</button>

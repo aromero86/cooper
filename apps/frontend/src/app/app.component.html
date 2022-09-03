@@ -1,1 +1,38 @@
-<cooper-nx-welcome></cooper-nx-welcome>
+<div *ngFor="let color of colors">
+
+    <div class="flex flex-row gap-4 items-center justify-center">
+        <div class="flex flex-col gap-3 items-center">
+            <cui-button [color]="color" size="xs" mode="regular" [rounded]="true">{{ color }}</cui-button>
+            <cui-button [color]="color" size="sm" mode="regular" [rounded]="true">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="regular" [rounded]="true">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="regular" [rounded]="true" [disabled]="true">{{ color }} disabled</cui-button>
+            <cui-button [color]="color" size="lg" mode="regular" [rounded]="true">{{ color }}</cui-button>
+            <cui-button [color]="color" size="xl" mode="regular" [rounded]="true">{{ color }}</cui-button>
+        </div>
+        <div class="flex flex-col gap-3 items-center">
+            <cui-button [color]="color" size="xs" mode="regular">{{ color }}</cui-button>
+            <cui-button [color]="color" size="sm" mode="regular">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="regular">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="regular" [disabled]="true">{{ color }} disabled</cui-button>
+            <cui-button [color]="color" size="lg" mode="regular">{{ color }}</cui-button>
+            <cui-button [color]="color" size="xl" mode="regular">{{ color }}</cui-button>
+        </div>
+        <div class="flex flex-col gap-3 items-center">
+            <cui-button [color]="color" size="xs" mode="flat">{{ color }}</cui-button>
+            <cui-button [color]="color" size="sm" mode="flat">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="flat">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="flat" [disabled]="true">{{ color }} disabled</cui-button>
+            <cui-button [color]="color" size="lg" mode="flat">{{ color }}</cui-button>
+            <cui-button [color]="color" size="xl" mode="flat">{{ color }}</cui-button>
+        </div>
+        <div class="flex flex-col gap-3 items-center">
+            <cui-button [color]="color" size="xs" mode="outline">{{ color }}</cui-button>
+            <cui-button [color]="color" size="sm" mode="outline">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="outline">{{ color }}</cui-button>
+            <cui-button [color]="color" size="md" mode="outline" [disabled]="true">{{ color }} disabled</cui-button>
+            <cui-button [color]="color" size="lg" mode="outline">{{ color }}</cui-button>
+            <cui-button [color]="color" size="xl" mode="outline">{{ color }}</cui-button>
+        </div>
+    </div>
+
+</div>

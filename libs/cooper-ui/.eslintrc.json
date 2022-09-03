@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "cooper",
+            "prefix": "cui",
             "style": "kebab-case"
           }
         ]

@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
+type ColorType = 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark';
+
 @Component({
-  selector: 'cooper-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'cooper-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'frontend';
+
+    public colors: ColorType[] = ['primary', 'accent', 'success', 'warning', 'danger', 'dark'];
+
 }

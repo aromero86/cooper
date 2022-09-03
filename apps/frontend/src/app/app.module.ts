@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
+
+import { CooperUiModule, CooperButtonModule } from '@cooper/ui';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent],
-  imports: [BrowserModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, CooperUiModule, CooperButtonModule],
   providers: [],
   bootstrap: [AppComponent],
 })
