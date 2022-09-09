@@ -1,20 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
-
-import { CooperUiModule, CooperButtonModule } from '@cooper/ui';
-import { IconsModule } from './icons/icons.module';
+import { NgModule }                  from '@angular/core';
+import { BrowserModule }             from '@angular/platform-browser';
+// --------------------------------------------------------
+import { CuiBadgetComponentModule,
+         CuiButtonComponentModule,
+         CuiSidebarComponentModule } from '@cooper/ui';
+// --------------------------------------------------------
+import { AppComponent }              from './app.component';
 
 @NgModule({
     declarations: [AppComponent],
     imports: [
         BrowserModule,
-        CooperUiModule,
-        CooperButtonModule,
-        IconsModule,
+        CuiBadgetComponentModule,
+        CuiButtonComponentModule,
+        CuiSidebarComponentModule,
     ],
-    providers: [],
     bootstrap: [ AppComponent ],
 })
 export class AppModule {}

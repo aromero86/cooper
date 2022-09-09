@@ -1,110 +1,78 @@
-<div *ngFor="let color of colors">
+<div class="flex flex-row min-h-screen min-w-screen">
+    <cui-sidebar>
+        <cui-sidebar-item label="Mi dashboard" iconName="camera"></cui-sidebar-item>
+        <cui-sidebar-item label="Mi dashboard 2" iconName="camera">
+            <cui-badge color="primary" [rounded]="true" label="2"></cui-badge>
+        </cui-sidebar-item>
+        <cui-sidebar-divider></cui-sidebar-divider>
+        <cui-sidebar-item label="Mi dashboard 3" iconName="camera">
+            <cui-badge color="danger" [rounded]="true" label="new!"></cui-badge>
+        </cui-sidebar-item>
+        <cui-sidebar-item label="Mi dashboard 4" iconName="camera">
+            <cui-sidebar-subitem label="Subitem 1" iconName="camera"></cui-sidebar-subitem>
+            <cui-sidebar-subitem label="Subitem 2" iconName="camera"></cui-sidebar-subitem>
+            <cui-sidebar-subitem label="Subitem 3" iconName="camera"></cui-sidebar-subitem>
+            <cui-sidebar-subitem label="Subitem 4" iconName="camera"></cui-sidebar-subitem>
+        </cui-sidebar-item>
+    </cui-sidebar>
+    <div class="flex flex-1">
 
-    <div class="flex flex-row gap-4 items-center justify-center">
-        <div class="flex flex-col gap-3 items-center">
-            <cui-button [color]="color" size="xs" mode="regular" [rounded]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="sm" mode="regular" [rounded]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="regular" [rounded]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="regular" [rounded]="true" [disabled]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }} disabled</span>
-            </cui-button>
-            <cui-button [color]="color" size="lg" mode="regular" [rounded]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="xl" mode="regular" [rounded]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
+        <div class="flex flex-1 flex-col gap-4 items-center justify-center">
+            <div class="flex gap-2">
+                <cui-badge color="primary" label="Primary"></cui-badge>
+                <cui-badge color="accent" label="Accent"></cui-badge>
+                <cui-badge color="success" label="Success"></cui-badge>
+                <cui-badge color="warning" label="Warning"></cui-badge>
+                <cui-badge color="danger" label="Danger"></cui-badge>
+                <cui-badge color="dark" label="Dark"></cui-badge>
+            </div>
+
+            <div class="flex gap-2">
+                <cui-badge color="primary" size="large" label="Primary"></cui-badge>
+                <cui-badge color="accent" size="large" label="Accent"></cui-badge>
+                <cui-badge color="success" size="large" label="Success"></cui-badge>
+                <cui-badge color="warning" size="large" label="Warning"></cui-badge>
+                <cui-badge color="danger" size="large" label="Danger"></cui-badge>
+                <cui-badge color="dark" size="large" label="Dark"></cui-badge>
+            </div>
+
+            <div class="flex gap-2">
+                <cui-badge color="primary" label="Primary" iconName="camera"></cui-badge>
+                <cui-badge color="accent" label="Accent" iconName="camera"></cui-badge>
+                <cui-badge color="success" label="Success" iconName="camera"></cui-badge>
+                <cui-badge color="warning" label="Warning" iconName="camera"></cui-badge>
+                <cui-badge color="danger" label="Danger" iconName="camera"></cui-badge>
+                <cui-badge color="dark" label="Dark" iconName="camera"></cui-badge>
+            </div>
+
+            <div class="flex gap-2">
+                <cui-badge color="primary" size="large" label="Primary" iconName="camera"></cui-badge>
+                <cui-badge color="accent" size="large" label="Accent" iconName="camera"></cui-badge>
+                <cui-badge color="success" size="large" label="Success" iconName="camera"></cui-badge>
+                <cui-badge color="warning" size="large" label="Warning" iconName="camera"></cui-badge>
+                <cui-badge color="danger" size="large" label="Danger" iconName="camera"></cui-badge>
+                <cui-badge color="dark" size="large" label="Dark" iconName="camera"></cui-badge>
+            </div>
+
+            <div class="flex gap-2">
+                <cui-badge [rounded]="true" color="primary" size="large" iconName="camera"></cui-badge>
+                <cui-badge [rounded]="true" color="accent" size="large" iconName="camera"></cui-badge>
+                <cui-badge [rounded]="true" color="success" size="large" iconName="camera"></cui-badge>
+                <cui-badge [rounded]="true" color="warning" size="large" iconName="camera"></cui-badge>
+                <cui-badge [rounded]="true" color="danger" size="large" iconName="camera"></cui-badge>
+                <cui-badge [rounded]="true" color="dark" size="large" iconName="camera"></cui-badge>
+            </div>
+
+            <div class="flex gap-2">
+                <cui-badge [rounded]="true" color="primary" label="1"></cui-badge>
+                <cui-badge [rounded]="true" color="accent" label="2"></cui-badge>
+                <cui-badge [rounded]="true" color="success" label="3"></cui-badge>
+                <cui-badge [rounded]="true" color="warning" label="4"></cui-badge>
+                <cui-badge [rounded]="true" color="danger" label="5"></cui-badge>
+                <cui-badge [rounded]="true" color="dark" label="6"></cui-badge>
+            </div>
+
         </div>
-        <div class="flex flex-col gap-3 items-center">
-            <cui-button [color]="color" size="xs" mode="regular">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="sm" mode="regular">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="regular">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="regular" [disabled]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }} disabled</span>
-            </cui-button>
-            <cui-button [color]="color" size="lg" mode="regular">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="xl" mode="regular">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-        </div>
-        <div class="flex flex-col gap-3 items-center">
-            <cui-button [color]="color" size="xs" mode="flat">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="sm" mode="flat">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="flat">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="flat" [disabled]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }} disabled</span>
-            </cui-button>
-            <cui-button [color]="color" size="lg" mode="flat">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="xl" mode="flat">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-        </div>
-        <div class="flex flex-col gap-3 items-center">
-            <cui-button [color]="color" size="xs" mode="outline">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="sm" mode="outline">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="outline">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="md" mode="outline" [disabled]="true">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }} disabled</span>
-            </cui-button>
-            <cui-button [color]="color" size="lg" mode="outline">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-            <cui-button [color]="color" size="xl" mode="outline">
-                <i-tabler name="camera"></i-tabler>
-                <span>{{ color }}</span>
-            </cui-button>
-        </div>
+
     </div>
-
 </div>

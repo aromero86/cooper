@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     styleUrls: ['./button.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CooperButtonComponent {
+export class CuiButtonComponent {
 
     @Input() color: 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark' = 'primary';
     @Input() mode: 'regular' | 'outline' | 'flat' = 'regular'; 

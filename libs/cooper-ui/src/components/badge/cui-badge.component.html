@@ -1,0 +1,14 @@
+<span name="badge"
+    [class.rounded]="rounded"
+    [class.size-regular]="size==='regular'"
+    [class.size-large]="size==='large'"
+    [class.color-primary]="color==='primary'"
+    [class.color-accent]="color==='accent'"
+    [class.color-success]="color==='success'"
+    [class.color-warning]="color==='warning'"
+    [class.color-danger]="color==='danger'"
+    [class.color-dark]="color==='dark'"
+>
+    <cui-icon *ngIf="iconName" [name]="iconName"></cui-icon>
+    <span *ngIf="label">{{ label }}</span>
+</span>

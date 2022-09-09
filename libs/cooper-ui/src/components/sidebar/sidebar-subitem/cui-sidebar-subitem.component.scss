@@ -1,0 +1,8 @@
+:host {
+    a {
+        @apply flex gap-3 items-center p-2 pl-6 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700;
+        cui-icon {
+            @apply h-6 w-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white;
+        }
+    }
+}
