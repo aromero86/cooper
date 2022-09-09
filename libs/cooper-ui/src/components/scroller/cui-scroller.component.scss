@@ -1,0 +1,27 @@
+:host {
+    @apply flex flex-col flex-1 overflow-y-auto my-2 mx-2 py-2 pl-1 pr-2;
+}
+
+:host::-webkit-scrollbar {
+    @apply bg-transparent h-1.5 w-1.5;
+}
+
+:host::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-md;
+}
+
+:host::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-md;
+}
+
+:host::-webkit-scrollbar-button {
+    @apply hidden;
+}
+
+:host::-webkit-scrollbar-thumb {
+    @apply bg-gray-200 dark:bg-gray-700;
+}
+
+:host::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-300 dark:bg-gray-600;
+}

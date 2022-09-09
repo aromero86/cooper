@@ -1,7 +1,8 @@
 :host {
+    @apply block mb-1 mt-1;
     
     li a {
-        @apply flex gap-3 items-center mb-1 mt-1 p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700;
+        @apply flex gap-3 items-center p-2 text-base font-normal text-gray-700 rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700;
     }
 
     li cui-icon {

@@ -1,9 +1,9 @@
 
-<aside class="w-64" aria-label="Sidebar">
-    <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
-        <ul class="min-h-screen">
+<aside aria-label="Sidebar" class="flex flex-col flex-1 w-64 overflow-hidden bg-gray-50 dark:bg-gray-800">
+    <ul class="flex flex-col flex-1 overflow-hidden">
+        <cui-scroller>
             <ng-content></ng-content>
-        </ul>
-    </div>
+        </cui-scroller>
+    </ul>
  </aside>
  

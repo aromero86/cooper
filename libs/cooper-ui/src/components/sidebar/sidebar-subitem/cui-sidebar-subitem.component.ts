@@ -10,10 +10,10 @@ export class CuiSidebarSubitemComponent {
 
     @Input() label = '';
     @Input() iconName = '';
-    @Output() itemClicked = new EventEmitter<MouseEvent>();
+    @Output() subitemClicked = new EventEmitter<MouseEvent>();
 
     handleClick(event: MouseEvent): void {
-        this.itemClicked.emit(event);
+        this.subitemClicked.emit(event);
     }
 
 }
