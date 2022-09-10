@@ -1,20 +1,17 @@
 import { NgModule }                  from '@angular/core';
 import { BrowserModule }             from '@angular/platform-browser';
+import { RouterModule }              from '@angular/router';
 // --------------------------------------------------------
-import { CuiBadgetComponentModule,
-         CuiButtonComponentModule,
-         CuiSidebarComponentModule } from '@cooper/ui';
-// --------------------------------------------------------
+import { CooperSidebarModule }       from './components';
 import { AppComponent }              from './app.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    bootstrap: [ AppComponent ],
+    declarations: [ AppComponent ],
     imports: [
         BrowserModule,
-        CuiBadgetComponentModule,
-        CuiButtonComponentModule,
-        CuiSidebarComponentModule,
+        RouterModule,
+        CooperSidebarModule,
     ],
-    bootstrap: [ AppComponent ],
 })
-export class AppModule {}
+export class AppModule { }
