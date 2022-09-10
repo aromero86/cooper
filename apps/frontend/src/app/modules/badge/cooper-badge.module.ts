@@ -5,7 +5,7 @@ import { RouterModule,
 // --------------------------------------------------------
 import { CuiBadgeComponentModule }  from '@cooper/ui'
 // --------------------------------------------------------
-import { CooperBadgeComponent }     from './badge.component';
+import { CooperBadgeComponent }     from './cooper-badge.component';
 
 const routes: Routes = [
     { path: '', component: CooperBadgeComponent, },

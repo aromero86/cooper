@@ -3,8 +3,8 @@ import { Routes,
          RouterModule } from '@angular/router';
 
 const routes: Routes = [
-    { path: 'badge', loadChildren: () => import('./modules/badge/badge.module').then(m => m.CooperBadgeModule) },
-    { path: 'button', loadChildren: () => import('./modules/button/button.module').then(m => m.CooperButtonModule) },
+    { path: 'badge', loadChildren: () => import('./modules/badge/cooper-badge.module').then(m => m.CooperBadgeModule) },
+    { path: 'button', loadChildren: () => import('./modules/button/cooper-button.module').then(m => m.CooperButtonModule) },
     { path: '**', redirectTo: '' },
     { path: '',  redirectTo: '/badge', pathMatch: 'full' },
 ];

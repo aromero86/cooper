@@ -1,1 +1,1 @@
-export * from './sidebar/sidebar.module';
+export * from './sidebar/cooper-sidebar.module';

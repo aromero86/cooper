@@ -6,7 +6,7 @@ import { RouterModule,
 import { CuiButtonComponentModule,
          CuiScrollerComponentModule, } from '@cooper/ui'
 // --------------------------------------------------------
-import { CooperButtonComponent }       from './button.component';
+import { CooperButtonComponent }       from './cooper-button.component';
 
 const routes: Routes = [
     { path: '', component: CooperButtonComponent, },

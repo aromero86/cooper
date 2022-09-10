@@ -5,7 +5,7 @@ import { RouterModule }              from '@angular/router';
 import { CuiBadgeComponentModule,
          CuiSidebarComponentModule } from '@cooper/ui';
 // --------------------------------------------------------
-import { CooperSidebarComponent }    from './sidebar.component';
+import { CooperSidebarComponent }    from './cooper-sidebar.component';
 
 @NgModule({
     imports: [
