@@ -1,0 +1,7 @@
+<li>
+    <a href="#" cui-ripple (click)="handleClick($event)">
+        <cui-icon *ngIf="iconName" [name]="iconName"></cui-icon>
+        <span class="flex-1 whitespace-nowrap overflow-hidden text-ellipsis">{{ label }}</span>
+        <ng-content select="cui-badge"></ng-content>
+    </a>
+</li>

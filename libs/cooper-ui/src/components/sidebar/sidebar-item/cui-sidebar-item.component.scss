@@ -1,0 +1,30 @@
+:host {
+    @apply block mb-1 mt-1;
+    
+    li a {
+        @apply cursor-pointer flex gap-3 items-center p-2 text-base font-normal text-oscuro-700 rounded-lg dark:text-oscuro-200 hover:bg-oscuro-100 dark:hover:bg-oscuro-700;
+    }
+
+    li cui-icon {
+        @apply h-6 w-6 text-oscuro-500 transition duration-75 dark:text-oscuro-400 group-hover:text-oscuro-900 dark:group-hover:text-white;
+    }
+
+    li.opened a {
+        @apply font-semibold;
+    }
+
+    ul.closed {
+        @apply hidden;
+    }
+
+    &.active {
+        li a {
+            @apply font-bold;
+        }
+        li cui-icon {
+            @apply text-accent-500 dark:text-accent-400;
+        }
+    }
+}
+
+

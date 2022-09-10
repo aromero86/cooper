@@ -3,9 +3,9 @@ import { NgModule }              from '@angular/core';
 // --------------------------------------------------------
 import { CuiDirectivesModule }   from '../../directives';
 // --------------------------------------------------------
-import { CooperButtonComponent } from './button.component';
+import { CuiButtonComponent }    from './button.component';
 // --------------------------------------------------------
-export { CooperButtonComponent } from './button.component';
+export { CuiButtonComponent }    from './button.component';
 
 @NgModule({
     imports: [
@@ -13,11 +13,10 @@ export { CooperButtonComponent } from './button.component';
         CuiDirectivesModule,
     ],
     exports: [
-        CooperButtonComponent,
+        CuiButtonComponent,
     ],
     declarations: [
-        CooperButtonComponent,
+        CuiButtonComponent,
     ],
-    providers: [ ],
 })
-export class CooperButtonModule { }
+export class CuiButtonComponentModule { }

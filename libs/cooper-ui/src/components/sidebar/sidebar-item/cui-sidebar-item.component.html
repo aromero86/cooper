@@ -1,0 +1,11 @@
+<li [class.opened]="submenuOpened$ | async">
+    <a cui-ripple (click)="handleClick($event)">
+        <cui-icon *ngIf="iconName" [name]="iconName"></cui-icon>
+        <span class="flex-1 whitespace-nowrap overflow-hidden text-ellipsis">{{ label }}</span>
+        <ng-content select="cui-badge"></ng-content>
+        <cui-icon *ngIf="isSubmenu$ | async" name="chevron-down"></cui-icon>
+    </a>
+    <ul #submenu [class.closed]="submenuClosed$ | async">
+        <ng-content select="cui-sidebar-subitem"></ng-content>
+    </ul>
+ </li>

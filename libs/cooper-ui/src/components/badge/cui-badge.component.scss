@@ -1,0 +1,50 @@
+:host {
+    @apply inline-flex;
+
+    span[name="badge"] {
+        @apply inline-flex items-center gap-1 rounded px-2.5 py-0.5;
+
+        &.rounded {
+            @apply rounded-full;
+        }
+
+        &.size-regular {
+            @apply text-xs font-semibold;
+            cui-icon {
+                @apply h-3 w-3;
+            }
+        }
+        &.size-large {
+            @apply text-sm font-medium;
+            cui-icon {
+                @apply h-4 w-4;
+            }
+        }
+
+        &.color-primary {
+            @apply bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800;
+        }
+
+        &.color-accent {
+            @apply bg-accent-100 text-accent-800 dark:bg-accent-200 dark:text-accent-900;
+        }
+
+        &.color-success {
+            @apply bg-success-100 text-success-800 dark:bg-success-200 dark:text-success-900;
+        }
+
+        &.color-warning {
+            @apply bg-warning-100 text-warning-800 dark:bg-warning-200 dark:text-warning-900;
+        }
+
+        &.color-danger {
+            @apply bg-danger-100 text-danger-800 dark:bg-danger-200 dark:text-danger-900;
+        }
+
+        &.color-oscuro {
+            @apply bg-oscuro-100 text-oscuro-800 dark:bg-oscuro-700 dark:text-oscuro-300;
+        }
+    
+    }
+
+}
