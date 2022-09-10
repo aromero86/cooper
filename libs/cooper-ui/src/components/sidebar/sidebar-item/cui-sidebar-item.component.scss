@@ -2,11 +2,11 @@
     @apply block mb-1 mt-1;
     
     li a {
-        @apply cursor-pointer flex gap-3 items-center p-2 text-base font-normal text-slate-700 rounded-lg dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700;
+        @apply cursor-pointer flex gap-3 items-center p-2 text-base font-normal text-oscuro-700 rounded-lg dark:text-oscuro-200 hover:bg-oscuro-100 dark:hover:bg-oscuro-700;
     }
 
     li cui-icon {
-        @apply h-6 w-6 text-slate-500 transition duration-75 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white;
+        @apply h-6 w-6 text-oscuro-500 transition duration-75 dark:text-oscuro-400 group-hover:text-oscuro-900 dark:group-hover:text-white;
     }
 
     li.opened a {
@@ -22,7 +22,7 @@
             @apply font-bold;
         }
         li cui-icon {
-            @apply text-pink-500 dark:text-pink-400;
+            @apply text-accent-500 dark:text-accent-400;
         }
     }
 }

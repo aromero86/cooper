@@ -1,11 +1,12 @@
-import { CommonModule }             from '@angular/common';
-import { NgModule }                 from '@angular/core';
+import { CommonModule }                from '@angular/common';
+import { NgModule }                    from '@angular/core';
 import { RouterModule,
-         Routes }                   from '@angular/router';
+         Routes }                      from '@angular/router';
 // --------------------------------------------------------
-import { CuiBadgeComponentModule }  from '@cooper/ui'
+import { CuiButtonComponentModule,
+         CuiScrollerComponentModule, } from '@cooper/ui'
 // --------------------------------------------------------
-import { CooperButtonComponent }    from './button.component';
+import { CooperButtonComponent }       from './button.component';
 
 const routes: Routes = [
     { path: '', component: CooperButtonComponent, },
@@ -17,7 +18,8 @@ const routes: Routes = [
         CommonModule,
         RouterModule,
         RouterModule.forChild(routes),
-        CuiBadgeComponentModule,
+        CuiButtonComponentModule,
+        CuiScrollerComponentModule,
     ],
     declarations: [
         CooperButtonComponent,

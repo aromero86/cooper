@@ -65,162 +65,162 @@
 
         /*** Primary ***/
         &.color-primary {
-            @apply focus:ring-sky-300 dark:focus:ring-sky-800;
+            @apply focus:ring-primary-300 dark:focus:ring-primary-800;
         }
 
         &.mode-regular.color-primary {
             @apply text-white 
-                   bg-sky-700
-                   hover:bg-sky-800
-                   dark:bg-sky-600 dark:hover:bg-sky-700 ;
+                   bg-primary-700
+                   hover:bg-primary-800
+                   dark:bg-primary-600 dark:hover:bg-primary-700 ;
         }
 
         &.mode-outline.color-primary {
-            @apply text-sky-700 
-                   hover:text-white hover:bg-sky-800
-                   border-sky-700
-                   dark:border-sky-500 dark:text-sky-500 dark:hover:text-white dark:hover:bg-sky-600;
+            @apply text-primary-700 
+                   hover:text-white hover:bg-primary-800
+                   border-primary-700
+                   dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600;
         }
 
         &.mode-flat.color-primary {
-            @apply text-sky-700
-                   bg-sky-50
-                   hover:bg-sky-100
-                   dark:bg-sky-100 dark:text-sky-400 dark:hover:bg-sky-200;
+            @apply text-primary-700
+                   bg-primary-50
+                   hover:bg-primary-100
+                   dark:bg-primary-100 dark:text-primary-400 dark:hover:bg-primary-200;
         }
 
         /*** Accent ***/
         &.color-accent {
-            @apply focus:ring-pink-300 dark:focus:ring-pink-800;
+            @apply focus:ring-accent-300 dark:focus:ring-accent-800;
         }
 
         &.mode-regular.color-accent {
             @apply text-white 
-                    bg-pink-700
-                    hover:bg-pink-800
-                    dark:bg-pink-600 dark:hover:bg-pink-700 ;
+                    bg-accent-700
+                    hover:bg-accent-800
+                    dark:bg-accent-600 dark:hover:bg-accent-700 ;
         }
 
         &.mode-outline.color-accent {
-            @apply text-pink-700 
-                   hover:text-white hover:bg-pink-800
-                   border-pink-700
-                   dark:border-pink-500 dark:text-pink-500 dark:hover:text-white dark:hover:bg-pink-600;
+            @apply text-accent-700 
+                   hover:text-white hover:bg-accent-800
+                   border-accent-700
+                   dark:border-accent-500 dark:text-accent-500 dark:hover:text-white dark:hover:bg-accent-600;
         }
 
         &.mode-flat.color-accent {
-            @apply text-pink-700
-                   bg-pink-50
-                   hover:bg-pink-100
-                   dark:bg-pink-100 dark:text-pink-400 dark:hover:bg-pink-200;
+            @apply text-accent-700
+                   bg-accent-50
+                   hover:bg-accent-100
+                   dark:bg-accent-100 dark:text-accent-400 dark:hover:bg-accent-200;
         }
 
         /*** Success ***/
         &.color-success {
-            @apply focus:ring-emerald-300 dark:focus:ring-emerald-800;
+            @apply focus:ring-success-300 dark:focus:ring-success-800;
         }
 
         &.mode-regular.color-success {
             @apply text-white 
-                   bg-emerald-700
-                   hover:bg-emerald-800
-                   dark:bg-emerald-600 dark:hover:bg-emerald-700 ;
+                   bg-success-700
+                   hover:bg-success-800
+                   dark:bg-success-600 dark:hover:bg-success-700 ;
         }
 
         &.mode-outline.color-success {
-            @apply text-emerald-700 
-                   hover:text-white hover:bg-emerald-800
-                   border-emerald-700
-                   dark:border-emerald-500 dark:text-emerald-500 dark:hover:text-white dark:hover:bg-emerald-600;
+            @apply text-success-700 
+                   hover:text-white hover:bg-success-800
+                   border-success-700
+                   dark:border-success-500 dark:text-success-500 dark:hover:text-white dark:hover:bg-success-600;
         }
 
         &.mode-flat.color-success {
-            @apply text-emerald-500
-                   bg-emerald-50
-                   hover:bg-emerald-100
-                   dark:bg-emerald-100 dark:text-emerald-400 dark:hover:bg-emerald-200;
+            @apply text-success-500
+                   bg-success-50
+                   hover:bg-success-100
+                   dark:bg-success-100 dark:text-success-400 dark:hover:bg-success-200;
         }
 
         /*** Warning ***/
         &.color-warning {
-            @apply focus:ring-amber-300 dark:focus:ring-amber-800;
+            @apply focus:ring-warning-300 dark:focus:ring-warning-800;
         }
 
         &.mode-regular.color-warning {
             @apply text-white 
-                  bg-amber-700
-                  hover:bg-amber-800
-                  dark:bg-amber-600 dark:hover:bg-amber-700 ;
+                  bg-warning-700
+                  hover:bg-warning-800
+                  dark:bg-warning-600 dark:hover:bg-warning-700 ;
         }
 
         &.mode-outline.color-warning {
-            @apply text-amber-700 
-                   hover:text-white hover:bg-amber-800
-                   border-amber-700
-                   dark:border-amber-500 dark:text-amber-500 dark:hover:text-white dark:hover:bg-amber-600;
+            @apply text-warning-700 
+                   hover:text-white hover:bg-warning-800
+                   border-warning-700
+                   dark:border-warning-500 dark:text-warning-500 dark:hover:text-white dark:hover:bg-warning-600;
         }
 
         &.mode-flat.color-warning {
-            @apply text-amber-700
-                   bg-amber-50
-                   hover:bg-amber-100
-                   dark:bg-amber-100 dark:text-amber-400 dark:hover:bg-amber-200;
+            @apply text-warning-700
+                   bg-warning-50
+                   hover:bg-warning-100
+                   dark:bg-warning-100 dark:text-warning-400 dark:hover:bg-warning-200;
         }
 
         /*** Danger ***/
         &.color-danger {
-            @apply focus:ring-red-300 dark:focus:ring-red-800;
+            @apply focus:ring-danger-300 dark:focus:ring-danger-800;
         }
 
         &.mode-regular.color-danger {
             @apply text-white 
-                   bg-red-700
-                   hover:bg-red-800
-                   dark:bg-red-600 dark:hover:bg-red-700 ;
+                   bg-danger-700
+                   hover:bg-danger-800
+                   dark:bg-danger-600 dark:hover:bg-danger-700 ;
         }
 
         &.mode-outline.color-danger {
-            @apply text-red-700 
-                   hover:text-white hover:bg-red-800
-                   border-red-700
-                   dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600;
+            @apply text-danger-700 
+                   hover:text-white hover:bg-danger-800
+                   border-danger-700
+                   dark:border-danger-500 dark:text-danger-500 dark:hover:text-white dark:hover:bg-danger-600;
         }
 
         &.mode-flat.color-danger {
-            @apply text-red-700
-                   bg-red-50
-                   hover:bg-red-100
-                   dark:bg-red-100 dark:text-red-400 dark:hover:bg-red-200;
+            @apply text-danger-700
+                   bg-danger-50
+                   hover:bg-danger-100
+                   dark:bg-danger-100 dark:text-danger-400 dark:hover:bg-danger-200;
         }
 
         /*** Dark ***/
-        &.color-dark {
-            @apply focus:ring-slate-300 dark:focus:ring-slate-800;
+        &.color-oscuro {
+            @apply focus:ring-oscuro-300 dark:focus:ring-oscuro-800;
 
             &.disabled {
                 @apply opacity-30;
             }
         }
 
-        &.mode-regular.color-dark {
+        &.mode-regular.color-oscuro {
             @apply text-white 
-                   bg-slate-700
-                   hover:bg-slate-800
-                   dark:bg-slate-600 dark:hover:bg-slate-700 ;
+                   bg-oscuro-700
+                   hover:bg-oscuro-800
+                   dark:bg-oscuro-600 dark:hover:bg-oscuro-700 ;
         }
 
-        &.mode-outline.color-dark {
-            @apply text-slate-700 
-                   hover:text-white hover:bg-slate-800
-                   border-slate-700
-                   dark:border-slate-500 dark:text-slate-500 dark:hover:text-white dark:hover:bg-slate-600;
+        &.mode-outline.color-oscuro {
+            @apply text-oscuro-700 
+                   hover:text-white hover:bg-oscuro-800
+                   border-oscuro-700
+                   dark:border-oscuro-500 dark:text-oscuro-500 dark:hover:text-white dark:hover:bg-oscuro-600;
         }
 
-        &.mode-flat.color-dark {
-            @apply text-slate-700
-                   bg-slate-50
-                   hover:bg-slate-100
-                   dark:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-200;
+        &.mode-flat.color-oscuro {
+            @apply text-oscuro-700
+                   bg-oscuro-50
+                   hover:bg-oscuro-100
+                   dark:bg-oscuro-100 dark:text-oscuro-400 dark:hover:bg-oscuro-200;
         }
 
     }
