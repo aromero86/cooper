@@ -19,4 +19,4 @@ export { CuiBadgetComponent }     from './cui-badge.component';
         CuiBadgetComponent,
     ],
 })
-export class CuiBadgetComponentModule { }
+export class CuiBadgeComponentModule { }

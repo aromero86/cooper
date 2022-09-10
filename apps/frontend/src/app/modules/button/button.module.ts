@@ -5,10 +5,10 @@ import { RouterModule,
 // --------------------------------------------------------
 import { CuiBadgeComponentModule }  from '@cooper/ui'
 // --------------------------------------------------------
-import { CooperBadgeComponent }     from './badge.component';
+import { CooperButtonComponent }    from './button.component';
 
 const routes: Routes = [
-    { path: '', component: CooperBadgeComponent, },
+    { path: '', component: CooperButtonComponent, },
     { path: '**', redirectTo: '' },
 ];
 
@@ -20,7 +20,7 @@ const routes: Routes = [
         CuiBadgeComponentModule,
     ],
     declarations: [
-        CooperBadgeComponent,
+        CooperButtonComponent,
     ],
 })
-export class CooperBadgeModule { }
+export class CooperButtonModule { }

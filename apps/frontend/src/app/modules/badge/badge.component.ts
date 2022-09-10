@@ -6,6 +6,4 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     styleUrls: ['./badge.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CooperBadgeComponent {
-    
-}
+export class CooperBadgeComponent { }

@@ -2,11 +2,11 @@
     @apply block mb-1 mt-1;
     
     li a {
-        @apply flex gap-3 items-center p-2 text-base font-normal text-gray-700 rounded-lg dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700;
+        @apply cursor-pointer flex gap-3 items-center p-2 text-base font-normal text-slate-700 rounded-lg dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700;
     }
 
     li cui-icon {
-        @apply h-6 w-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white;
+        @apply h-6 w-6 text-slate-500 transition duration-75 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white;
     }
 
     li.opened a {
@@ -15,6 +15,15 @@
 
     ul.closed {
         @apply hidden;
+    }
+
+    &.active {
+        li a {
+            @apply font-bold;
+        }
+        li cui-icon {
+            @apply text-pink-500 dark:text-pink-400;
+        }
     }
 }
 

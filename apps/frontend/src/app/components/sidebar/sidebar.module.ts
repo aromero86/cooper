@@ -1,7 +1,8 @@
 import { CommonModule }              from '@angular/common';
 import { NgModule }                  from '@angular/core';
+import { RouterModule }              from '@angular/router';
 // --------------------------------------------------------
-import { CuiBadgetComponentModule,
+import { CuiBadgeComponentModule,
          CuiSidebarComponentModule } from '@cooper/ui';
 // --------------------------------------------------------
 import { CooperSidebarComponent }    from './sidebar.component';
@@ -9,7 +10,8 @@ import { CooperSidebarComponent }    from './sidebar.component';
 @NgModule({
     imports: [
         CommonModule,
-        CuiBadgetComponentModule,
+        RouterModule,
+        CuiBadgeComponentModule,
         CuiSidebarComponentModule,
     ],
     exports: [
