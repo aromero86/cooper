@@ -1,3 +1,4 @@
+export * from './alert/cui-alert.component.module';
 export * from './badge/cui-badge.component.module';
 export * from './button/button.component.module';
 export * from './icon/cui-icon.component.module';
