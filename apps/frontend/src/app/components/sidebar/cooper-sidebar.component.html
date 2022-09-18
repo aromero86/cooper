@@ -45,4 +45,6 @@
     <cui-sidebar-item label="Mi dashboard" iconName="camera">
         <cui-badge color="primary" [rounded]="true" label="2"></cui-badge>
     </cui-sidebar-item>
+    <cui-sidebar-item *ngIf="lightModeIsEnabled$ | async" label="Enable dark mode" iconName="moon" (itemClicked)="enableDarkMode()"></cui-sidebar-item>
+    <cui-sidebar-item *ngIf="darkModeIsEnabled$ | async" label="Enable light mode" iconName="sun" (itemClicked)="enableLightMode()"></cui-sidebar-item>
 </cui-sidebar>
