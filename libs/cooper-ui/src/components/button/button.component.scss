@@ -194,33 +194,33 @@
         }
 
         /*** Dark ***/
-        &.color-oscuro {
-            @apply focus:ring-oscuro-300 dark:focus:ring-oscuro-800;
+        &.color-dark {
+            @apply focus:ring-dark-300 dark:focus:ring-dark-800;
 
             &.disabled {
                 @apply opacity-30;
             }
         }
 
-        &.mode-regular.color-oscuro {
+        &.mode-regular.color-dark {
             @apply text-white 
-                   bg-oscuro-700
-                   hover:bg-oscuro-800
-                   dark:bg-oscuro-600 dark:hover:bg-oscuro-700 ;
+                   bg-dark-700
+                   hover:bg-dark-800
+                   dark:bg-dark-600 dark:hover:bg-dark-700 ;
         }
 
-        &.mode-outline.color-oscuro {
-            @apply text-oscuro-700 
-                   hover:text-white hover:bg-oscuro-800
-                   border-oscuro-700
-                   dark:border-oscuro-500 dark:text-oscuro-500 dark:hover:text-white dark:hover:bg-oscuro-600;
+        &.mode-outline.color-dark {
+            @apply text-dark-700 
+                   hover:text-white hover:bg-dark-800
+                   border-dark-700
+                   dark:border-dark-500 dark:text-dark-500 dark:hover:text-white dark:hover:bg-dark-600;
         }
 
-        &.mode-flat.color-oscuro {
-            @apply text-oscuro-700
-                   bg-oscuro-50
-                   hover:bg-oscuro-100
-                   dark:bg-oscuro-100 dark:text-oscuro-400 dark:hover:bg-oscuro-200;
+        &.mode-flat.color-dark {
+            @apply text-dark-700
+                   bg-dark-50
+                   hover:bg-dark-100
+                   dark:bg-dark-100 dark:text-dark-400 dark:hover:bg-dark-200;
         }
 
     }

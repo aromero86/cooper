@@ -23,9 +23,9 @@
 }
 
 :host::-webkit-scrollbar-thumb {
-    @apply bg-oscuro-200 dark:bg-oscuro-700;
+    @apply bg-dark-200 dark:bg-dark-700;
 }
 
 :host::-webkit-scrollbar-thumb:hover {
-    @apply bg-oscuro-300 dark:bg-oscuro-600;
+    @apply bg-dark-300 dark:bg-dark-600;
 }

@@ -8,4 +8,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class CooperAlertComponent {
 
+    alert() {
+        window.alert('hola')
+    }
+
 }

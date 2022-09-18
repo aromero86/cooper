@@ -1,0 +1,28 @@
+:host {
+    @apply flex flex-1;
+}
+
+div.container {
+    @apply px-4;
+
+    ::ng-deep a {
+        @apply underline font-bold;
+    }
+
+    &.color-primary {
+        @apply text-primary-700 dark:text-primary-800;
+    }
+
+    &.color-success {
+        @apply text-success-700 dark:text-success-800;
+    }
+
+    &.color-warning {
+        @apply text-warning-700 dark:text-warning-800;
+    }
+
+    &.color-danger {
+        @apply text-danger-700 dark:text-danger-800;
+    }
+
+}

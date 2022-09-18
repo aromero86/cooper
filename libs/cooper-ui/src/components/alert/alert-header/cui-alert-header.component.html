@@ -1,0 +1,20 @@
+<div class="container"
+    [class.color-primary]="modeIsInfo$ | async"
+    [class.color-success]="modeIsSuccess$ | async"
+    [class.color-warning]="modeIsWarning$ | async"
+    [class.color-danger]="modeIsDanger$ | async"
+>
+    <cui-icon *ngIf="modeIsInfo$ | async" name="info-circle"></cui-icon>
+    <cui-icon *ngIf="modeIsSuccess$ | async" name="circle-check"></cui-icon>
+    <cui-icon *ngIf="modeIsWarning$ | async" name="alert-circle"></cui-icon>
+    <cui-icon *ngIf="modeIsDanger$ | async" name="circle-x"></cui-icon>
+
+    <span class="sr-only">Info</span>
+    <div class="label-container" [class.big-title]="alertHasBody$ | async">
+        <ng-content></ng-content>
+    </div>
+    <button *ngIf="dismissible$ | async" type="button" data-dismiss-target="#alert-container" aria-label="Close" (click)="dismiss()">
+        <span class="sr-only">Close</span>
+        <cui-icon name="x"></cui-icon>
+    </button>
+</div>

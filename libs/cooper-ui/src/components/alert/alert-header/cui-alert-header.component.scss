@@ -1,0 +1,76 @@
+:host {
+    @apply flex flex-1;
+}
+
+div.container {
+    @apply flex flex-1 items-center;
+
+    cui-icon {
+        @apply w-5 h-5;
+    }
+
+    div.label-container {
+        @apply ml-3 text-sm font-medium;
+
+        &.big-title {
+            @apply text-xl;
+        }
+
+        ::ng-deep a {
+            @apply underline font-bold;
+        }
+    }
+
+    button {
+        @apply ml-auto -mx-1.5 -my-1.5 rounded-lg focus:ring-2 p-1.5 inline-flex h-8 w-8;
+    }
+
+    &.color-primary {
+        cui-icon {
+            @apply text-primary-700 dark:text-primary-800;
+        }
+        div.label-container {
+            @apply text-primary-700 dark:text-primary-800;
+        }
+        button {
+            @apply bg-primary-100 text-primary-500 focus:ring-primary-400 hover:bg-primary-200 dark:bg-primary-200 dark:text-primary-600 dark:hover:bg-primary-300;
+        }
+    }
+
+    &.color-success {
+        cui-icon {
+            @apply text-success-700 dark:text-success-800;
+        }
+        div.label-container {
+            @apply text-success-700 dark:text-success-800;
+        }
+        button {
+            @apply bg-success-100 text-success-500 focus:ring-success-400 hover:bg-success-200 dark:bg-success-200 dark:text-success-600 dark:hover:bg-success-300;
+        }
+    }
+
+    &.color-warning {
+        cui-icon {
+            @apply text-warning-700 dark:text-warning-800;
+        }
+        div.label-container {
+            @apply text-warning-700 dark:text-warning-800;
+        }
+        button {
+            @apply bg-warning-100 text-warning-500 focus:ring-warning-400 hover:bg-warning-200 dark:bg-warning-200 dark:text-warning-600 dark:hover:bg-warning-300;
+        }
+    }
+
+    &.color-danger {
+        cui-icon {
+            @apply text-danger-700 dark:text-danger-800;
+        }
+        div.label-container {
+            @apply text-danger-700 dark:text-danger-800;
+        }
+        button {
+            @apply bg-danger-100 text-danger-500 focus:ring-danger-400 hover:bg-danger-200 dark:bg-danger-200 dark:text-danger-600 dark:hover:bg-danger-300;
+        }
+    }
+
+}
