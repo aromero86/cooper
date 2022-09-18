@@ -8,9 +8,13 @@ export class CuiDarkModeService {
     constructor() {
         if (localStorage['theme'] === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
+            document.body.classList.remove('bg-white');
+            document.body.classList.add('bg-dark-900');
             this.darkMode.next(true);
         } else {
             document.documentElement.classList.remove('dark');
+            document.body.classList.add('bg-white');
+            document.body.classList.remove('bg-dark-900')
             this.darkMode.next(false);
         }
     }
@@ -26,12 +30,16 @@ export class CuiDarkModeService {
     enableDarkMode(): void {
         this.darkMode.next(true);
         document.documentElement.classList.add('dark');
+        document.body.classList.remove('bg-white');
+        document.body.classList.add('bg-dark-900');
         localStorage.setItem('theme', 'dark');
     }
 
     enableLightMode(): void {
         this.darkMode.next(false);
         document.documentElement.classList.remove('dark');
+        document.body.classList.add('bg-white');
+        document.body.classList.remove('bg-dark-900')
         localStorage.setItem('theme', 'light');
     }
 
