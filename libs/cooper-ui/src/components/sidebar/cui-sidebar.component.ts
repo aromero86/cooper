@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'cui-sidebar',
@@ -6,8 +6,4 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input } from '@angula
     styleUrls: ['./cui-sidebar.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CuiSidebarComponent {
-
-
-
-}
+export class CuiSidebarComponent { }

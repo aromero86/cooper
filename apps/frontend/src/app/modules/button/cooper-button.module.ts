@@ -3,8 +3,8 @@ import { NgModule }                    from '@angular/core';
 import { RouterModule,
          Routes }                      from '@angular/router';
 // --------------------------------------------------------
-import { CuiButtonComponentModule,
-         CuiScrollerComponentModule, } from '@cooper/ui'
+import { CuiButtonModule,
+         CuiScrollerModule, }          from '@cooper/ui'
 // --------------------------------------------------------
 import { CooperButtonComponent }       from './cooper-button.component';
 
@@ -18,8 +18,8 @@ const routes: Routes = [
         CommonModule,
         RouterModule,
         RouterModule.forChild(routes),
-        CuiButtonComponentModule,
-        CuiScrollerComponentModule,
+        CuiButtonModule,
+        CuiScrollerModule,
     ],
     declarations: [
         CooperButtonComponent,

@@ -17,4 +17,4 @@ import { CuiIconComponent }  from './cui-icon.component';
         CuiIconComponent
     ],
 })
-export class CuiIconComponentModule { }
+export class CuiIconModule { }

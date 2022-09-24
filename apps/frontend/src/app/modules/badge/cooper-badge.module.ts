@@ -3,7 +3,7 @@ import { NgModule }                 from '@angular/core';
 import { RouterModule,
          Routes }                   from '@angular/router';
 // --------------------------------------------------------
-import { CuiBadgeComponentModule }  from '@cooper/ui'
+import { CuiBadgeModule }           from '@cooper/ui'
 // --------------------------------------------------------
 import { CooperBadgeComponent }     from './cooper-badge.component';
 
@@ -17,7 +17,7 @@ const routes: Routes = [
         CommonModule,
         RouterModule,
         RouterModule.forChild(routes),
-        CuiBadgeComponentModule,
+        CuiBadgeModule,
     ],
     declarations: [
         CooperBadgeComponent,

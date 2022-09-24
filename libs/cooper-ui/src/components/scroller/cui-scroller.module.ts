@@ -16,4 +16,4 @@ export { CuiScrollerComponent } from './cui-scroller.component';
         CuiScrollerComponent,
     ],
 })
-export class CuiScrollerComponentModule { }
+export class CuiScrollerModule { }

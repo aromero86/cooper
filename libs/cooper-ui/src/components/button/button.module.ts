@@ -19,4 +19,4 @@ export { CuiButtonComponent }    from './button.component';
         CuiButtonComponent,
     ],
 })
-export class CuiButtonComponentModule { }
+export class CuiButtonModule { }

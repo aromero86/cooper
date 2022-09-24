@@ -4,9 +4,9 @@ import { RouterModule,
          Routes }                     from '@angular/router';
 // --------------------------------------------------------
 import { CuiAlertModule,
-         CuiButtonComponentModule,
-         CuiIconComponentModule,
-         CuiScrollerComponentModule } from '@cooper/ui';
+         CuiButtonModule,
+         CuiIconModule,
+         CuiScrollerModule }          from '@cooper/ui';
 // --------------------------------------------------------
 import { CooperAlertComponent }       from './cooper-alert.component';
 
@@ -21,9 +21,9 @@ const routes: Routes = [
         RouterModule,
         RouterModule.forChild(routes),
         CuiAlertModule,
-        CuiButtonComponentModule,
-        CuiIconComponentModule,
-        CuiScrollerComponentModule,
+        CuiButtonModule,
+        CuiIconModule,
+        CuiScrollerModule,
     ],
     declarations: [
         CooperAlertComponent

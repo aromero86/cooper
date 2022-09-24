@@ -4,7 +4,7 @@ import { RouterModule }              from '@angular/router';
 // --------------------------------------------------------
 import { CooperSidebarModule }       from './components';
 import { AppComponent }              from './app.component';
-import { AppRoutingModule } from './app.routing.module';
+import { AppRoutingModule }          from './app.routing.module';
 
 @NgModule({
     bootstrap: [ AppComponent ],

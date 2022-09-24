@@ -2,8 +2,8 @@ import { CommonModule }               from '@angular/common';
 import { NgModule }                   from '@angular/core';
 // --------------------------------------------------------
 import { CuiDirectivesModule }        from '../../directives';
-import { CuiIconComponentModule }     from './../icon/cui-icon.component.module';
-import { CuiScrollerComponentModule } from './../scroller/cui-scroller.component.module';
+import { CuiIconModule }              from './../icon/cui-icon.module';
+import { CuiScrollerModule }          from './../scroller/cui-scroller.module';
 // --------------------------------------------------------
 import { CuiSidebarComponent }        from './cui-sidebar.component';
 import { CuiSidebarBrandComponent }   from './sidebar-brand/cui-sidebar-brand.component';
@@ -23,8 +23,8 @@ export { CuiSidebarSubitemComponent } from './sidebar-subitem/cui-sidebar-subite
     imports: [
         CommonModule,
         CuiDirectivesModule,
-        CuiIconComponentModule,
-        CuiScrollerComponentModule,
+        CuiIconModule,
+        CuiScrollerModule,
     ],
     exports: [
         CuiSidebarComponent,
@@ -43,4 +43,4 @@ export { CuiSidebarSubitemComponent } from './sidebar-subitem/cui-sidebar-subite
         CuiSidebarSubitemComponent,
     ],
 })
-export class CuiSidebarComponentModule { }
+export class CuiSidebarModule { }

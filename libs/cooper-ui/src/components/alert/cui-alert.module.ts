@@ -1,7 +1,7 @@
 import { CommonModule }            from '@angular/common';
 import { NgModule }                from '@angular/core';
 // --------------------------------------------------------
-import { CuiIconComponentModule }  from '../icon/cui-icon.component.module';
+import { CuiIconModule }           from '../icon/cui-icon.module';
 // --------------------------------------------------------
 import { CuiAlertComponent }       from './cui-alert.component';
 import { CuiAlertBodyComponent }   from './alert-body/cui-alert-body.component';
@@ -14,7 +14,7 @@ export { CuiAlertHeaderComponent } from './alert-header/cui-alert-header.compone
 @NgModule({
     imports: [
         CommonModule,
-        CuiIconComponentModule,
+        CuiIconModule,
     ],
     exports: [
         CuiAlertComponent,

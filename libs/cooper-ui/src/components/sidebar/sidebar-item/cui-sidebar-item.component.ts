@@ -1,6 +1,14 @@
-import { ChangeDetectionStrategy, Component, ContentChildren, EventEmitter, Input, Output, QueryList } from '@angular/core';
-import { BehaviorSubject, map } from 'rxjs';
-import { CuiSidebarSubitemComponent } from '../cui-sidebar.component.module';
+import { ChangeDetectionStrategy,
+         Component,
+         ContentChildren,
+         EventEmitter,
+         Input,
+         Output,
+         QueryList }                  from '@angular/core';
+import { BehaviorSubject,
+         map }                        from 'rxjs';
+// --------------------------------------------------------
+import { CuiSidebarSubitemComponent } from '../sidebar-subitem/cui-sidebar-subitem.component';
 
 @Component({
     selector: 'cui-sidebar-item',

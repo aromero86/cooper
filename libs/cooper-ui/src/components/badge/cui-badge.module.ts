@@ -1,7 +1,7 @@
 import { CommonModule }           from '@angular/common';
 import { NgModule }               from '@angular/core';
 // --------------------------------------------------------
-import { CuiIconComponentModule } from '../icon/cui-icon.component.module';
+import { CuiIconModule }          from '../icon/cui-icon.module';
 // --------------------------------------------------------
 import { CuiBadgetComponent }     from './cui-badge.component';
 // --------------------------------------------------------
@@ -10,7 +10,7 @@ export { CuiBadgetComponent }     from './cui-badge.component';
 @NgModule({
     imports: [
         CommonModule,
-        CuiIconComponentModule,
+        CuiIconModule,
     ],
     exports: [
         CuiBadgetComponent,
@@ -19,4 +19,4 @@ export { CuiBadgetComponent }     from './cui-badge.component';
         CuiBadgetComponent,
     ],
 })
-export class CuiBadgeComponentModule { }
+export class CuiBadgeModule { }
