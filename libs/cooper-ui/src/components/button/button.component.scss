@@ -86,15 +86,15 @@
 
         &.mode-regular.color-primary {
             @apply text-white 
-                   bg-primary-700
-                   hover:bg-primary-800
-                   dark:bg-primary-600 dark:hover:bg-primary-700 ;
+                   bg-primary-600
+                   hover:bg-primary-700
+                   dark:bg-primary-500 dark:hover:bg-primary-600 ;
         }
 
         &.mode-outline.color-primary {
-            @apply text-primary-700 
-                   hover:text-white hover:bg-primary-800
-                   border-primary-700
+            @apply text-primary-600 
+                   hover:text-white hover:bg-primary-700
+                   border-primary-600
                    dark:border-primary-500 dark:text-primary-500 dark:hover:text-white dark:hover:bg-primary-600;
         }
 
@@ -112,15 +112,15 @@
 
         &.mode-regular.color-accent {
             @apply text-white 
-                    bg-accent-700
-                    hover:bg-accent-800
-                    dark:bg-accent-600 dark:hover:bg-accent-700 ;
+                    bg-accent-600
+                    hover:bg-accent-700
+                    dark:bg-accent-500 dark:hover:bg-accent-600 ;
         }
 
         &.mode-outline.color-accent {
-            @apply text-accent-700 
-                   hover:text-white hover:bg-accent-800
-                   border-accent-700
+            @apply text-accent-600 
+                   hover:text-white hover:bg-accent-700
+                   border-accent-600
                    dark:border-accent-500 dark:text-accent-500 dark:hover:text-white dark:hover:bg-accent-600;
         }
 
@@ -138,15 +138,15 @@
 
         &.mode-regular.color-success {
             @apply text-white 
-                   bg-success-700
-                   hover:bg-success-800
-                   dark:bg-success-600 dark:hover:bg-success-700 ;
+                   bg-success-600
+                   hover:bg-success-700
+                   dark:bg-success-500 dark:hover:bg-success-600 ;
         }
 
         &.mode-outline.color-success {
-            @apply text-success-700 
-                   hover:text-white hover:bg-success-800
-                   border-success-700
+            @apply text-success-600 
+                   hover:text-white hover:bg-success-700
+                   border-success-600
                    dark:border-success-500 dark:text-success-500 dark:hover:text-white dark:hover:bg-success-600;
         }
 
@@ -164,15 +164,15 @@
 
         &.mode-regular.color-warning {
             @apply text-white 
-                  bg-warning-700
-                  hover:bg-warning-800
-                  dark:bg-warning-600 dark:hover:bg-warning-700 ;
+                  bg-warning-600
+                  hover:bg-warning-700
+                  dark:bg-warning-500 dark:hover:bg-warning-600 ;
         }
 
         &.mode-outline.color-warning {
-            @apply text-warning-700 
-                   hover:text-white hover:bg-warning-800
-                   border-warning-700
+            @apply text-warning-600 
+                   hover:text-white hover:bg-warning-700
+                   border-warning-600
                    dark:border-warning-500 dark:text-warning-500 dark:hover:text-white dark:hover:bg-warning-600;
         }
 
@@ -190,15 +190,15 @@
 
         &.mode-regular.color-danger {
             @apply text-white 
-                   bg-danger-700
-                   hover:bg-danger-800
-                   dark:bg-danger-600 dark:hover:bg-danger-700 ;
+                   bg-danger-600
+                   hover:bg-danger-700
+                   dark:bg-danger-500 dark:hover:bg-danger-600 ;
         }
 
         &.mode-outline.color-danger {
-            @apply text-danger-700 
-                   hover:text-white hover:bg-danger-800
-                   border-danger-700
+            @apply text-danger-600 
+                   hover:text-white hover:bg-danger-700
+                   border-danger-600
                    dark:border-danger-500 dark:text-danger-500 dark:hover:text-white dark:hover:bg-danger-600;
         }
 
@@ -220,15 +220,15 @@
 
         &.mode-regular.color-dark {
             @apply text-white 
-                   bg-dark-700
-                   hover:bg-dark-800
-                   dark:bg-dark-600 dark:hover:bg-dark-700 ;
+                   bg-dark-600
+                   hover:bg-dark-700
+                   dark:bg-dark-500 dark:hover:bg-dark-600 ;
         }
 
         &.mode-outline.color-dark {
-            @apply text-dark-700 
-                   hover:text-white hover:bg-dark-800
-                   border-dark-700
+            @apply text-dark-600 
+                   hover:text-white hover:bg-dark-700
+                   border-dark-600
                    dark:border-dark-500 dark:text-dark-500 dark:hover:text-white dark:hover:bg-dark-600;
         }
 
