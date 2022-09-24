@@ -6,8 +6,11 @@
             font-medium
             rounded-md
             text-center
-            border border-transparent
-            focus:outline-none focus:ring-2 focus:ring-offset-1;
+            focus:outline-none focus:ring-4;
+
+        div.inner {
+            @apply border-2 border-transparent;
+        }
 
         ::ng-deep span {
             overflow: hidden;
@@ -16,7 +19,7 @@
         }
 
         &.size-xs {
-            @apply text-xs px-2 py-1 gap-1;
+            @apply text-xs px-2 py-0.5 gap-1;
 
             ::ng-deep i-tabler {
                 @apply h-3 w-3;
@@ -24,7 +27,7 @@
         }
 
         &.size-sm {
-            @apply text-sm px-3 py-1.5 gap-1;
+            @apply text-sm px-3 py-1 gap-1;
 
             ::ng-deep i-tabler {
                 @apply h-4 w-4;
@@ -32,7 +35,7 @@
         }
 
         &.size-md {
-            @apply text-sm px-4 py-2 gap-1;
+            @apply text-sm px-4 py-1.5 gap-1;
 
             ::ng-deep i-tabler {
                 @apply h-4 w-4;
@@ -40,7 +43,7 @@
         }
 
         &.size-lg {
-            @apply text-base px-5 py-2.5 gap-2;
+            @apply text-base px-5 py-2 gap-2;
 
             ::ng-deep i-tabler {
                 @apply h-5 w-5;
@@ -48,7 +51,7 @@
         }
 
         &.size-xl {
-            @apply text-base px-6 py-3 gap-2;
+            @apply text-base px-6 py-2.5 gap-2;
 
             ::ng-deep i-tabler {
                 @apply h-5 w-5;
@@ -57,6 +60,19 @@
 
         &.rounded {
             @apply rounded-full;
+        }
+
+        &.mode-outline {
+            @apply border-2 hover:border-0;
+            div.inner {
+                @apply border-0 border-transparent;
+            }
+            &:hover {
+                @apply border-0 hover:border-0;
+                div.inner {
+                    @apply border-2 border-transparent;
+                }
+            }
         }
 
         &.disabled {
