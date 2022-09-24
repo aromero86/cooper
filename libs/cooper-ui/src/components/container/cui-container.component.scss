@@ -1,0 +1,20 @@
+:host {
+    @apply block;
+
+    div.inner {
+        @apply mx-auto my-0;
+
+        &.size-small {
+            max-width: 640px;
+        }
+
+        &.size-medium {
+            max-width: 768px;
+        }
+
+        &.size-large {
+            max-width: 1024px;
+        }
+
+    }
+}

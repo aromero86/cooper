@@ -1,3 +1,7 @@
 :host {
     @apply flex flex-1;
+
+    cui-alert {
+        @apply mb-4;
+    }
 }

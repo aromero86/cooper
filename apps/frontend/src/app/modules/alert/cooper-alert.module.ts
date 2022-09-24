@@ -5,6 +5,7 @@ import { RouterModule,
 // --------------------------------------------------------
 import { CuiAlertModule,
          CuiButtonModule,
+         CuiContainerModule,
          CuiIconModule,
          CuiScrollerModule }          from '@cooper/ui';
 // --------------------------------------------------------
@@ -22,6 +23,7 @@ const routes: Routes = [
         RouterModule.forChild(routes),
         CuiAlertModule,
         CuiButtonModule,
+        CuiContainerModule,
         CuiIconModule,
         CuiScrollerModule,
     ],

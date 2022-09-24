@@ -1,8 +1,8 @@
 :host {
-    display: block;
+    @apply block;
 
-    div.container {
-        @apply flex flex-col gap-4 p-4 mb-4 rounded-lg;
+    div.alert-container {
+        @apply flex flex-col gap-4 p-4 rounded-lg;
 
         &.color-primary {
             @apply bg-primary-100 dark:bg-primary-200;
