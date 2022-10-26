@@ -1,9 +1,16 @@
 <h2 id="accordion-flush-heading-1" class="flex">
-    <button type="button" class="flex flex-1 items-center py-5 font-medium text-left" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+    <button type="button"
+        aria-controls="accordion-flush-body-1"
+        aria-expanded="true"
+        class="accordion-item-label"
+        [class.is-opened]="itemIsOpened$ | async"
+        [class.is-closed]="itemIsClosed$ | async"
+        data-accordion-target="#accordion-flush-body-1"
+    >
         <div class="flex-1">
             <ng-content></ng-content>
         </div>
-        <cui-icon *ngIf="itemIsOpened$ | async" class="w-6 h-6 text-dark-400" name="chevron-up"></cui-icon>
-        <cui-icon *ngIf="itemIsClosed$ | async" class="w-6 h-6 text-dark-400" name="chevron-down"></cui-icon>
+        <cui-icon *ngIf="itemIsOpened$ | async" class="w-6 h-6 text-dark-400 dark:text-dark-500" name="chevron-up"></cui-icon>
+        <cui-icon *ngIf="itemIsClosed$ | async" class="w-6 h-6 text-dark-400 dark:text-dark-500" name="chevron-down"></cui-icon>
     </button>
 </h2>

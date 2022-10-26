@@ -4,4 +4,17 @@
     h2 {
         @apply flex-1;
     }
+
+    button.accordion-item-label {
+        @apply flex flex-1 items-center py-5 font-medium text-left;
+
+        &.is-opened {
+            @apply text-dark-900 dark:text-dark-50;
+        }
+
+        &.is-closed {
+            @apply text-dark-500 dark:text-dark-400;
+        }
+    }
+
 }
