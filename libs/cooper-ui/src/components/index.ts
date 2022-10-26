@@ -1,3 +1,4 @@
+export * from './accordion/cui-accordion.module';
 export * from './alert/cui-alert.module';
 export * from './badge/cui-badge.module';
 export * from './button/button.module';

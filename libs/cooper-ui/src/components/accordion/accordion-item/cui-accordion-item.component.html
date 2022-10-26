@@ -1,0 +1,8 @@
+<div class="accordion-item-header" (click)="toggle()">
+    <ng-content select="cui-accordion-item-label"></ng-content>
+    <cui-accordion-separator></cui-accordion-separator>
+</div>
+<div class="accordion-item-body" *ngIf="isOpened$ | async">
+    <ng-content select="cui-accordion-item-body"></ng-content>
+    <cui-accordion-separator></cui-accordion-separator>
+</div>

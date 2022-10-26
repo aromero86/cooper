@@ -4,6 +4,7 @@ import { RouterModule,
          Routes }                     from '@angular/router';
 // --------------------------------------------------------
 import { CuiAlertModule,
+         CuiBadgeModule,
          CuiButtonModule,
          CuiContainerModule,
          CuiIconModule,
@@ -22,6 +23,7 @@ const routes: Routes = [
         RouterModule,
         RouterModule.forChild(routes),
         CuiAlertModule,
+        CuiBadgeModule,
         CuiButtonModule,
         CuiContainerModule,
         CuiIconModule,

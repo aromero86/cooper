@@ -3,6 +3,7 @@ import { Routes,
          RouterModule } from '@angular/router';
 
 const routes: Routes = [
+    { path: 'accordion', loadChildren: () => import('./modules/accordion/cooper-accordion.module').then(m => m.CooperAccordionModule) },
     { path: 'alert', loadChildren: () => import('./modules/alert/cooper-alert.module').then(m => m.CooperAlertModule) },
     { path: 'badge', loadChildren: () => import('./modules/badge/cooper-badge.module').then(m => m.CooperBadgeModule) },
     { path: 'button', loadChildren: () => import('./modules/button/cooper-button.module').then(m => m.CooperButtonModule) },
