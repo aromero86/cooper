@@ -5,10 +5,14 @@
     
         cui-icon {
             @apply w-5 h-5;
+
+            &.big-icon {
+                @apply w-8 h-8
+            }
         }
     
         div.label-container {
-            @apply ml-3 text-sm font-medium;
+            @apply ml-2 text-sm font-medium;
     
             &.big-title {
                 @apply text-xl;

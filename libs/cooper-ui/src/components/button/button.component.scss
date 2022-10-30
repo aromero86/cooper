@@ -9,7 +9,7 @@
             focus:outline-none focus:ring-4;
 
         div.inner {
-            @apply border-2 border-transparent;
+            @apply border-2 border-transparent flex items-center gap-1;
         }
 
         ::ng-deep span {
