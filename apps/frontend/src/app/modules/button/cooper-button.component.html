@@ -4,7 +4,8 @@
         <div *ngFor="let mode of modes" class="flex flex-col gap-4 items-center justify-center">
             <div *ngFor="let color of colors" class="flex gap-2 justify-center items-center">
                 <cui-button *ngFor="let size of sizes" [color]="color" [size]="size" [mode]="mode">
-                    <span>{{ color }}</span>
+                    <cui-icon [size]="size" [name]="'camera'"></cui-icon>
+                    <cui-button-text>{{ color }}</cui-button-text>
                 </cui-button>
             </div>
         </div>

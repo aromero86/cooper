@@ -8,6 +8,11 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class CuiContainerComponent {
 
+    /** Container size. By default `md` 
+     * - `sm`: 640px
+     * - `md`: 768px
+     * - `lg`: 1024px
+    **/
     @Input() size: 'sm' | 'md' | 'lg' = 'md';
 
 }

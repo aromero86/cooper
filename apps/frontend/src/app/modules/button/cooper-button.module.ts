@@ -4,6 +4,7 @@ import { RouterModule,
          Routes }                      from '@angular/router';
 // --------------------------------------------------------
 import { CuiButtonModule,
+         CuiIconModule,
          CuiScrollerModule, }          from '@cooper/ui'
 // --------------------------------------------------------
 import { CooperButtonComponent }       from './cooper-button.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
         RouterModule,
         RouterModule.forChild(routes),
         CuiButtonModule,
+        CuiIconModule,
         CuiScrollerModule,
     ],
     declarations: [

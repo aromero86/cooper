@@ -4,12 +4,14 @@
             <cui-alert-header>A simple info alert with an <a href="#">example link</a>. Give it a click if you like.</cui-alert-header>
             <cui-alert-body>
                 <p>More info about this info alert goes here. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                <div class="flex mt-4 gap-2">
+                <div class="flex items-center mt-4 gap-2">
                     <cui-button size="sm">
-                        <cui-icon name="eye"></cui-icon>
-                        <span>View more</span>
+                        <cui-icon name="eye" size="sm"></cui-icon>
+                        <cui-button-text>View more</cui-button-text>
                     </cui-button>
-                    <cui-button size="sm" mode="outline">Dismiss</cui-button>
+                    <cui-button size="sm" mode="outline">
+                        <cui-button-text>Dismiss</cui-button-text>
+                    </cui-button>
                 </div>
             </cui-alert-body>
         </cui-alert>

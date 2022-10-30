@@ -7,7 +7,7 @@
     }
 
     button.accordion-item-label {
-        @apply flex flex-1 items-center py-5 font-medium text-left;
+        @apply flex flex-1 items-center px-2 py-5 font-medium text-left;
 
         &.is-opened {
             @apply text-dark-900 dark:text-dark-50;

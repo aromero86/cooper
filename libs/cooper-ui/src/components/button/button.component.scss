@@ -9,52 +9,41 @@
             focus:outline-none focus:ring-2;
 
         div.inner {
-            @apply border-2 border-transparent flex items-center gap-1;
-        }
-
-        ::ng-deep span {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: pre;
+            @apply border-2 border-transparent flex items-center;
         }
 
         &.size-xs {
             @apply text-xs px-2 py-0.5 gap-1;
-
-            ::ng-deep i-tabler {
-                @apply h-3 w-3;
+            div.inner {
+                @apply gap-0.5;
             }
         }
 
         &.size-sm {
             @apply text-sm px-3 py-1 gap-1;
-
-            ::ng-deep i-tabler {
-                @apply h-4 w-4;
+            div.inner {
+                @apply gap-0.5;
             }
         }
 
         &.size-md {
-            @apply text-sm px-4 py-1.5 gap-1;
-
-            ::ng-deep i-tabler {
-                @apply h-4 w-4;
+            @apply text-base px-4 py-1.5 gap-1;
+            div.inner {
+                @apply gap-1;
             }
         }
 
         &.size-lg {
-            @apply text-base px-5 py-2 gap-2;
-
-            ::ng-deep i-tabler {
-                @apply h-5 w-5;
+            @apply text-lg px-5 py-2 gap-2;
+            div.inner {
+                @apply gap-1.5;
             }
         }
 
         &.size-xl {
-            @apply text-base px-6 py-2.5 gap-2;
-
-            ::ng-deep i-tabler {
-                @apply h-5 w-5;
+            @apply text-xl px-6 py-2.5 gap-2;
+            div.inner {
+                @apply gap-2;
             }
         }
 

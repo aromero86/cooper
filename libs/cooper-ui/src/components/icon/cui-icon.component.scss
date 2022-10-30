@@ -4,5 +4,27 @@
     i-tabler {
         height: inherit;
         width: inherit;
+
+        &.size-xs {
+            @apply h-3 w-3;
+        }
+        &.size-sm {
+            @apply h-4 w-4;
+        }
+        &.size-md {
+            @apply h-5 w-5;
+        }
+        &.size-lg {
+            @apply h-6 w-6;
+        }
+        &.size-xl {
+            @apply h-8 w-8;
+        }
+        &.size-xxl {
+            @apply h-10 w-10;
+        }
+        &.size-xxxl {
+            @apply h-12 w-12;
+        }
     }
 }

@@ -27,8 +27,16 @@ export class CuiAlertComponent implements OnChanges, OnInit, OnDestroy {
         private cuiAlertService: CuiAlertService,
     ) { }
 
+    /** Alert mode:
+     * - **Values**: `info` | `success` | `warning` | `danger`
+     * - **Default**: `info`
+    **/
     @Input() mode: 'info' | 'success' | 'warning' | 'danger' = 'info';
+
+    /** If `true`, a close button will be added `dismissed` event will be able to be triggered. Default `false` */
     @Input() dismissible = false;
+
+    /** Alert was dismissed */
     @Output() dismissed = new EventEmitter();
 
     public modeIsInfo$ = this.cuiAlertService.modeIsInfo$;

@@ -4,10 +4,10 @@
     [class.color-warning]="modeIsWarning$ | async"
     [class.color-danger]="modeIsDanger$ | async"
 >
-    <cui-icon *ngIf="modeIsInfo$ | async" name="info-circle" [class.big-icon]="alertHasBody$ | async"></cui-icon>
-    <cui-icon *ngIf="modeIsSuccess$ | async" name="circle-check" [class.big-icon]="alertHasBody$ | async"></cui-icon>
-    <cui-icon *ngIf="modeIsWarning$ | async" name="alert-circle" [class.big-icon]="alertHasBody$ | async"></cui-icon>
-    <cui-icon *ngIf="modeIsDanger$ | async" name="circle-x" [class.big-icon]="alertHasBody$ | async"></cui-icon>
+    <cui-icon *ngIf="modeIsInfo$ | async" name="info-circle" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
+    <cui-icon *ngIf="modeIsSuccess$ | async" name="circle-check" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
+    <cui-icon *ngIf="modeIsWarning$ | async" name="alert-circle" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
+    <cui-icon *ngIf="modeIsDanger$ | async" name="circle-x" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
 
     <span class="sr-only">Info</span>
     <div class="label-container" [class.big-title]="alertHasBody$ | async">

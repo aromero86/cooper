@@ -1,11 +1,11 @@
-import { CommonModule }           from '@angular/common';
-import { NgModule }               from '@angular/core';
+import { CommonModule }          from '@angular/common';
+import { NgModule }              from '@angular/core';
 // --------------------------------------------------------
-import { CuiIconModule }          from '../icon/cui-icon.module';
+import { CuiIconModule }         from '../icon/cui-icon.module';
 // --------------------------------------------------------
-import { CuiBadgetComponent }     from './cui-badge.component';
+import { CuiBadgeComponent }     from './cui-badge.component';
 // --------------------------------------------------------
-export { CuiBadgetComponent }     from './cui-badge.component';
+export { CuiBadgeComponent }     from './cui-badge.component';
 
 @NgModule({
     imports: [
@@ -13,10 +13,10 @@ export { CuiBadgetComponent }     from './cui-badge.component';
         CuiIconModule,
     ],
     exports: [
-        CuiBadgetComponent,
+        CuiBadgeComponent,
     ],
     declarations: [
-        CuiBadgetComponent,
+        CuiBadgeComponent,
     ],
 })
 export class CuiBadgeModule { }

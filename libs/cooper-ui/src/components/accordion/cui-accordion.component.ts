@@ -15,6 +15,7 @@ import { CuiAccordionService }       from './cui-accordion.service';
 })
 export class CuiAccordionComponent implements OnChanges, OnInit {
 
+    /** If `true`, only one `Accordion Item` will be able to be opened at the same time. Default `true` */
     @Input() onlyOneElemenetOpenedAtOnce = true;
 
     constructor(

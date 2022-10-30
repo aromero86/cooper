@@ -21,7 +21,9 @@ import { CuiAccordionItemLabelComponent } from './accordion-item-label/cui-accor
 })
 export class CuiAccordionItemComponent implements OnInit, OnDestroy {
 
+    /** If `true`, this item will be appear as opened when the componente is initialized. Default `false` */
     @Input() openOnInit = false;
+
     @Output() statusChange = new EventEmitter<{ isOpened: boolean }>();
     @ContentChildren(CuiAccordionItemLabelComponent) private set body(value: QueryList<CuiAccordionItemLabelComponent>) {
         if (value.length === 0)

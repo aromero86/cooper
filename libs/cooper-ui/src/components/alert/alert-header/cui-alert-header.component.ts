@@ -1,7 +1,5 @@
 import { ChangeDetectionStrategy,
-         Component,
-         EventEmitter,
-         Output }                from '@angular/core';
+         Component }             from '@angular/core';
 // --------------------------------------------------------
 import { CuiAlertService }       from '../cui-alert.service';
 
@@ -16,8 +14,6 @@ export class CuiAlertHeaderComponent {
     constructor(
         private cuiAlertService: CuiAlertService,
     ) { }
-
-    @Output() dismissed = new EventEmitter();
 
     public dismissible$ = this.cuiAlertService.dismissible$;
     public modeIsInfo$ = this.cuiAlertService.modeIsInfo$;
