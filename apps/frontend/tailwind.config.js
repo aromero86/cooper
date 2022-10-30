@@ -14,7 +14,7 @@ module.exports = {
             current: 'currentColor',
             primary: colors.sky,
             accent: colors.pink,
-            success: colors.emerald,
+            success: colors.green,
             warning: colors.yellow,
             danger: colors.red,
             dark: colors.slate,
