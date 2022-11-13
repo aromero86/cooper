@@ -2,6 +2,7 @@ export * from './accordion/cui-accordion.module';
 export * from './alert/cui-alert.module';
 export * from './avatar/cui-avatar.module';
 export * from './badge/cui-badge.module';
+export * from './breadcrumbs/breadcrumbs.module';
 export * from './button/button.module';
 export * from './container/cui-container.module';
 export * from './icon/cui-icon.module';
