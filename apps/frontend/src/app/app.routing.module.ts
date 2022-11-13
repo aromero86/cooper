@@ -9,8 +9,9 @@ const routes: Routes = [
     { path: 'badge', loadChildren: () => import('./modules/badge/cooper-badge.module').then(m => m.CooperBadgeModule) },
     { path: 'breadcrumbs', loadChildren: () => import('./modules/breadcrumbs/cooper-breadcrumbs.module').then(m => m.CooperBreadcrumbsModule) },
     { path: 'button', loadChildren: () => import('./modules/button/cooper-button.module').then(m => m.CooperButtonModule) },
-    { path: '**', redirectTo: '' },
-    { path: '',  redirectTo: '/badge', pathMatch: 'full' },
+    { path: 'playground', loadChildren: () => import('./playground/playground.module').then(m => m.PlaygroundModule) },
+    // { path: '**', redirectTo: '' },
+    // { path: '',  redirectTo: '/button', pathMatch: 'full' },
 ];
 
 @NgModule({
