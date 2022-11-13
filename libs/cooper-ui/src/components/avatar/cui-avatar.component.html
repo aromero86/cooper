@@ -1,0 +1,21 @@
+<div class="inner"
+    title="{{ name }}"
+    [class.avatar-rounded]="rounded"
+    [class.avatar-squared]="!rounded"
+    [class.color-primary]="statusColor==='primary'"
+    [class.color-accent]="statusColor==='accent'"
+    [class.color-success]="statusColor==='success'"
+    [class.color-warning]="statusColor==='warning'"
+    [class.color-danger]="statusColor==='danger'"
+    [class.color-dark]="statusColor==='dark'"
+    [class.size-xs]="size==='xs'"
+    [class.size-sm]="size==='sm'"
+    [class.size-md]="size==='md'"
+    [class.size-lg]="size==='lg'"
+    [class.size-xl]="size==='xl'"
+    [class.size-xxl]="size==='xxl'"
+    [class.size-xxxl]="size==='xxxl'"
+>
+    <img alt="{{ name }}" [src]="imgSrc">
+    <span></span>
+</div>

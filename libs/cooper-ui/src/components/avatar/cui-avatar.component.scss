@@ -1,0 +1,128 @@
+:host {
+    @apply relative;
+
+    div.inner img {
+        @apply rounded;
+    }
+
+    div.inner span {
+        @apply absolute rounded-full transform border-2 border-white dark:border-dark-900;
+    }
+
+    div.inner.avatar-rounded img {
+        @apply rounded-full;
+    }
+
+    div.inner.avatar-rounded span {
+        @apply bottom-0;
+    }
+
+    div.inner.color-primary span {
+        @apply bg-primary-500 dark:bg-primary-400;
+    }
+
+    div.inner.color-accent span {
+        @apply bg-accent-500 dark:bg-accent-400;
+    }
+
+    div.inner.color-success span {
+        @apply bg-success-500 dark:bg-success-400;
+    }
+
+    div.inner.color-warning span {
+        @apply bg-warning-500 dark:bg-warning-400;
+    }
+
+    div.inner.color-danger span {
+        @apply bg-danger-500 dark:bg-danger-400;
+    }
+
+    div.inner.color-dark span {
+        @apply bg-dark-500 dark:bg-dark-400;
+    }
+
+    div.inner.size-xs {
+        img {
+            @apply w-6 h-6;
+        }
+        span {
+            @apply bottom-0 right-0 w-2 h-2;
+        }
+        &.avatar-squared span {
+            @apply translate-x-0.5 translate-y-0.5;
+        }
+    }
+
+    div.inner.size-sm {
+        img {
+            @apply w-8 h-8;
+        }
+        span {
+            @apply bottom-0 right-0 w-2.5 h-2.5;
+        }
+        &.avatar-squared span {
+            @apply translate-x-1 translate-y-1;
+        }
+    }
+
+    div.inner.size-md {
+        img {
+            @apply w-10 h-10;
+        }
+        span {
+            @apply bottom-0 right-0 w-3 h-3;
+        }
+        &.avatar-squared span {
+            @apply translate-x-1 translate-y-1;
+        }
+    }
+
+    div.inner.size-lg {
+        img {
+            @apply w-12 h-12;
+        }
+        span {
+            @apply bottom-0 right-0 w-3.5 h-3.5;
+        }
+        &.avatar-squared span {
+            @apply translate-x-1 translate-y-1;
+        }
+    }
+
+    div.inner.size-xl {
+        img {
+            @apply w-16 h-16;
+        }
+        span {
+            @apply bottom-0 right-0 w-4 h-4;
+        }
+        &.avatar-squared span {
+            @apply translate-x-1.5 translate-y-1.5;
+        }
+    }
+
+    div.inner.size-xxl {
+        img {
+            @apply w-20 h-20;
+        }
+        span {
+            @apply bottom-0 right-0 w-5 h-5;
+        }
+        &.avatar-squared span {
+            @apply translate-x-2 translate-y-2;
+        }
+    }
+
+    div.inner.size-xxxl {
+        img {
+            @apply w-24 h-24;
+        }
+        span {
+            @apply bottom-0 right-0 w-6 h-6;
+        }
+        &.avatar-squared span {
+            @apply translate-x-2 translate-y-2;
+        }
+    }
+
+}

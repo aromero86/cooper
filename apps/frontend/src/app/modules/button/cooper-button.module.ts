@@ -10,7 +10,7 @@ import { CuiButtonModule,
 import { CooperButtonComponent }       from './cooper-button.component';
 
 const routes: Routes = [
-    { path: '', component: CooperButtonComponent, },
+    { path: '', component: CooperButtonComponent },
     { path: '**', redirectTo: '' },
 ];
 
