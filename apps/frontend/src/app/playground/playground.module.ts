@@ -1,7 +1,7 @@
 import { NgModule }                  from '@angular/core';
 import { RouterModule }              from '@angular/router';
 // --------------------------------------------------------
-import { CooperSidebarModule }       from '../components';
+import { CooperSidebarModule }       from './sidebar/cooper-sidebar.module';
 import { CooperPlaygroundComponent } from './playground.component';
 import { PlaygroundRoutingModule }   from './playground.routing.module';
 
