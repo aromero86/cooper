@@ -1,6 +1,7 @@
-import { NgModule }     from '@angular/core';
+import { NgModule }                  from '@angular/core';
 import { Routes,
-         RouterModule } from '@angular/router';
+         RouterModule }              from '@angular/router';
+// --------------------------------------------------------
 import { CooperPlaygroundComponent } from './playground.component';
 
 const routes: Routes = [
@@ -12,10 +13,10 @@ const routes: Routes = [
             { path: 'badge', loadChildren: () => import('./items/badge/cooper-badge.module').then(m => m.CooperBadgeModule) },
             { path: 'breadcrumbs', loadChildren: () => import('./items/breadcrumbs/cooper-breadcrumbs.module').then(m => m.CooperBreadcrumbsModule) },
             { path: 'button', loadChildren: () => import('./items/button/cooper-button.module').then(m => m.CooperButtonModule) },
+            { path: '',  redirectTo: 'badge', pathMatch: 'full' },
+            { path: '**', redirectTo: 'badge' },
         ],
     },
-    { path: '**', redirectTo: '' },
-    { path: '',  redirectTo: 'playground/badge', pathMatch: 'full' },
 ];
 
 @NgModule({
