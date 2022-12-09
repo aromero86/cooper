@@ -14,6 +14,8 @@ const routes: Routes = [
     { path: '**', redirectTo: '' },
 ];
 
+// TODO | Playground | Crear ejemplo de modales
+
 @NgModule({
     imports: [
         CommonModule,
