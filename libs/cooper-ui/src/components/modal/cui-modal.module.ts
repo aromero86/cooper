@@ -10,6 +10,10 @@ import { CuiModalHeaderComponent }    from './modal-header/cui-modal-header.comp
 export { CuiModalComponent }          from './cui-modal.component';
 export { CuiModalService }            from './cui-modal.service';
 
+// TODO | Modal | Closer button
+// TODO | Modal | Clickable glass should be optional
+// TODO | Modal | Close with escape should be optional
+
 @NgModule({
     imports: [
         CommonModule,
