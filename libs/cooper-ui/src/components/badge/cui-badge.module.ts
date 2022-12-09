@@ -7,8 +7,6 @@ import { CuiBadgeComponent }     from './cui-badge.component';
 // --------------------------------------------------------
 export { CuiBadgeComponent }     from './cui-badge.component';
 
-// TODO | Badge | Diversos problemas importando iconos
-
 @NgModule({
     imports: [
         CommonModule,
