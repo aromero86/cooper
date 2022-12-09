@@ -1,0 +1,20 @@
+:host {
+    @apply fixed top-0 left-0 right-0 z-50 w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 md:h-full;
+
+    div.glass {
+        @apply  bg-dark-900 dark:bg-dark-50 opacity-50;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    div.container {
+        @apply relative w-full h-full max-w-2xl md:h-auto mx-auto my-0 opacity-100;
+
+        div.content {
+            @apply relative bg-white rounded-lg shadow dark:bg-dark-700;
+        }
+    }
+}

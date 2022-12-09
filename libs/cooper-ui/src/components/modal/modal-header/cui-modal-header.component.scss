@@ -1,0 +1,9 @@
+:host {
+
+    @apply flex items-start justify-between p-4 border-b rounded-t border-dark-200 dark:border-dark-600;
+
+    div.title {
+        @apply text-xl font-semibold text-dark-900 dark:text-white;
+    }
+
+}
