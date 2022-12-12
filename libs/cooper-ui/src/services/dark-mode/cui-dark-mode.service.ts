@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable }      from '@angular/core';
+import { HighlightLoader } from 'ngx-highlightjs';
 import { BehaviorSubject,
          map }             from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class CuiDarkModeService {
 
-    constructor() {
+    constructor(private hljsLoader: HighlightLoader) {
         if (localStorage['theme'] === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
             document.body.classList.remove('bg-white');
@@ -33,6 +34,7 @@ export class CuiDarkModeService {
         document.body.classList.remove('bg-white');
         document.body.classList.add('bg-dark-900');
         localStorage.setItem('theme', 'dark');
+        this.hljsLoader.setTheme('assets/code-dark.css');
     }
 
     enableLightMode(): void {
@@ -41,6 +43,7 @@ export class CuiDarkModeService {
         document.body.classList.add('bg-white');
         document.body.classList.remove('bg-dark-900')
         localStorage.setItem('theme', 'light');
+        this.hljsLoader.setTheme('assets/code-light.css');
     }
 
     toggle(): void {

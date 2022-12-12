@@ -1,0 +1,11 @@
+<ng-content select="cooper-sandbox-view"></ng-content>
+<div class="snippets-picker">
+    <div *ngFor="let filename of snippetsFilenames$ | async"
+        class="item"
+        [class.selected]="filename === (selectedFilename$ | async)"
+        (click)="selectSnippet(filename)"
+    >{{ filename }}</div>
+</div>
+<div class="snippets">
+    <ng-content select="cooper-sandbox-snippet"></ng-content>
+</div>
