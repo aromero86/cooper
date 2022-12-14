@@ -1,9 +1,11 @@
 import { ChangeDetectionStrategy,
-         Component }              from '@angular/core';
+         Component }                   from '@angular/core';
+import { BehaviorSubject }             from 'rxjs';
 // --------------------------------------------------------
-import { CuiModalService }        from '@cooper/ui';
-// --------------------------------------------------------
-import { ModalExampleComponent }  from './modal-example/modal-example.component';
+import { ModalExampleComponentHtml,
+         ModalExampleComponentTs }     from './modal-example/modal-example.snippet';
+import { ModalWindowComponentHtml,
+         ModalWindowComponentTs }      from './modal-window/modal-window.snippet';
 
 @Component({
     selector: 'cooper-modal',
@@ -12,48 +14,14 @@ import { ModalExampleComponent }  from './modal-example/modal-example.component'
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CooperModalComponent {
-    public code = `
-import { ChangeDetectionStrategy,
-         Component }              from '@angular/core';
-// --------------------------------------------------------
-import { CuiModalService }        from '@cooper/ui';
-// --------------------------------------------------------
-import { ModalExampleComponent }  from './modal-example/modal-example.component';
 
-@Component({
-   selector: 'cooper-modal',
-   templateUrl: './cooper-modal.component.html',
-   styleUrls: ['./cooper-modal.component.scss'],
-   changeDetection: ChangeDetectionStrategy.OnPush,
-})
-export class CooperModalComponent {
+    private snippets = new BehaviorSubject({
+        ModalExampleComponentTs,
+        ModalExampleComponentHtml,
+        ModalWindowComponentHtml,
+        ModalWindowComponentTs,
+    });
 
-   constructor(
-       private modalService: CuiModalService,
-   ) { }
-
-   showModal(): void {
-       this.modalService.show({
-           modal: ModalExampleComponent,
-           onOpen: () => console.log('Abierto'),
-           onClose: () => console.log('Cerrado'),
-       });
-   }
-
-}`.trim();
-
-    constructor(
-        private modalService: CuiModalService,
-    ) { }
-
-    showModal(): void {
-        this.modalService.show({
-            modal: ModalExampleComponent,
-            onOpen: () => console.log('Abierto'),
-            onClose: () => console.log('Cerrado'),
-        });
-    }
-
-
+    public snippets$ = this.snippets.asObservable();
 
 }

@@ -1,29 +1,32 @@
-<!-- <pre><code [highlight]="code" [languages]="['typescript']" [lineNumbers]="true"></code></pre> -->
 <cui-scroller class="flex-1">
     <cui-container class="m-8">
         <cui-heading [level]="1">Heading 1</cui-heading>
         <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
 
-        <cooper-sandbox>
+        <cooper-sandbox *ngIf="snippets$ | async as snippets">
             <cooper-sandbox-view>
-                VIEW
+                <cooper-modal-example></cooper-modal-example>
             </cooper-sandbox-view>
-            <cooper-sandbox-snippet filename="example.html" [code]="code"></cooper-sandbox-snippet>
-            <cooper-sandbox-snippet filename="example.scss" code="code2"></cooper-sandbox-snippet>
-            <cooper-sandbox-snippet filename="example.ts" code="code3"></cooper-sandbox-snippet>
+            <cooper-sandbox-snippet
+                filename="modal.html"
+                language="html"
+                [code]="snippets.ModalExampleComponentHtml"
+            ></cooper-sandbox-snippet>
+            <cooper-sandbox-snippet
+                filename="modal.ts" 
+                language="typescript"
+                [code]="snippets.ModalExampleComponentTs"
+            ></cooper-sandbox-snippet>
+            <cooper-sandbox-snippet
+                filename="window.ts" 
+                language="typescript"
+                [code]="snippets.ModalWindowComponentTs"
+            ></cooper-sandbox-snippet>
+            <cooper-sandbox-snippet
+                filename="window.html" 
+                language="html"
+                [code]="snippets.ModalWindowComponentHtml"
+            ></cooper-sandbox-snippet>
         </cooper-sandbox>
-
-        <cui-heading [level]="2">Heading 2</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-heading [level]="3">Heading 3</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-heading [level]="4">Heading 4</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-heading [level]="5">Heading 5</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
-        <cui-heading [level]="6">Heading 6</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
     </cui-container>
 </cui-scroller>

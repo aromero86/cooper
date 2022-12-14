@@ -1,23 +1,23 @@
-import { CommonModule }          from '@angular/common';
-import { NgModule }              from '@angular/core';
+import { CommonModule }                from '@angular/common';
+import { NgModule }                    from '@angular/core';
 import { RouterModule,
-         Routes }                from '@angular/router';
-import { HighlightModule }       from 'ngx-highlightjs';
+         Routes }                      from '@angular/router';
+import { HighlightModule }             from 'ngx-highlightjs';
 // --------------------------------------------------------
-import { CuiContainerModule,
+import { CuiButtonModule,
+         CuiContainerModule,
          CuiHeadingModule,
          CuiParagraphModule,
-         CuiScrollerModule }     from '@cooper/ui';
+         CuiScrollerModule }           from '@cooper/ui';
 // --------------------------------------------------------
-import { CooperSandboxModule }   from '../../sandbox/cooper-sandbox.module';
-import { CooperModalComponent }  from './cooper-modal.component';
+import { CooperSandboxModule }         from '../../sandbox/cooper-sandbox.module';
+import { CooperModalComponent }        from './cooper-modal.component';
+import { CooperModalExampleComponent } from './modal-example/modal-example.component';
 
 const routes: Routes = [
     { path: '', component: CooperModalComponent },
     { path: '**', redirectTo: '' },
 ];
-
-// TODO | Playground | Crear ejemplo de modales
 
 @NgModule({
     imports: [
@@ -25,6 +25,7 @@ const routes: Routes = [
         RouterModule,
         RouterModule.forChild(routes),
         HighlightModule,
+        CuiButtonModule,
         CuiContainerModule,
         CuiHeadingModule,
         CuiParagraphModule,
@@ -33,6 +34,7 @@ const routes: Routes = [
     ],
     declarations: [
         CooperModalComponent,
+        CooperModalExampleComponent,
     ],
 })
 export class CooperModalModule { }

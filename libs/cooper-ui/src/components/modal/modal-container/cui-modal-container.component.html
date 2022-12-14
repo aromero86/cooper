@@ -1,9 +1,10 @@
-<!-- TODO | Modal | Glass para overflow de modal u overflow del background -->
 <div class="glass"></div>
-<div class="container">
-    <div class="content">
-        <ng-content select="cui-modal-header"></ng-content>
-        <ng-content select="cui-modal-body"></ng-content>
-        <ng-content select="cui-modal-footer"></ng-content>
+<cui-scroller [darken]="true">
+    <div class="container">
+        <div class="content">
+            <ng-content select="cui-modal-header"></ng-content>
+            <ng-content select="cui-modal-body"></ng-content>
+            <ng-content select="cui-modal-footer"></ng-content>
+        </div>
     </div>
-</div>
+</cui-scroller>

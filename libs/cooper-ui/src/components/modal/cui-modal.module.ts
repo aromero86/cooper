@@ -1,6 +1,8 @@
 import { CommonModule }               from '@angular/common';
 import { NgModule }                   from '@angular/core';
 // --------------------------------------------------------
+import { CuiScrollerModule }          from '../scroller/cui-scroller.module';
+// --------------------------------------------------------
 import { CuiModalComponent }          from './cui-modal.component';
 import { CuiModalBodyComponent }      from './modal-body/cui-modal-body.component';
 import { CuiModalContainerComponent } from './modal-container/cui-modal-container.component';
@@ -17,6 +19,7 @@ export { CuiModalService }            from './cui-modal.service';
 @NgModule({
     imports: [
         CommonModule,
+        CuiScrollerModule,
     ],
     exports: [
         CuiModalComponent,

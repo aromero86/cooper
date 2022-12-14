@@ -1,3 +1,9 @@
 <ng-container *ngIf="isVisible$ | async">
-    <pre><code [highlight]="code" [languages]="[language]" [lineNumbers]="true"></code></pre>
+    <cui-scroller [horizontal]="true" [vertical]="false">
+        <pre><code
+            [highlight]="code"
+            [languages]="[language]"
+            [lineNumbers]="true"
+        ></code></pre>
+    </cui-scroller>
 </ng-container>

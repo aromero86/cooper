@@ -1,9 +1,10 @@
+export const ModalExampleComponentTs = `
 import { ChangeDetectionStrategy,
          Component }                 from '@angular/core';
 // --------------------------------------------------------
 import { CuiModalService}            from '@cooper/ui';
 // --------------------------------------------------------
-import { ModalWindowComponent }      from '../modal-window/modal-window.component';
+import { ModalWindowComponent }      from './window';
 
 @Component({
     selector: 'cooper-modal-example',
@@ -25,3 +26,8 @@ export class CooperModalExampleComponent {
     }
 
 }
+`.trim();
+
+export const ModalExampleComponentHtml = `
+<cui-button (click)="showModal()">Open modal</cui-button>
+`.trim();
