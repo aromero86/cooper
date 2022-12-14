@@ -12,11 +12,13 @@ export class CuiDarkModeService {
             document.body.classList.remove('bg-white');
             document.body.classList.add('bg-dark-900');
             this.darkMode.next(true);
+            this.hljsLoader.setTheme('assets/code-dark.css');
         } else {
             document.documentElement.classList.remove('dark');
             document.body.classList.add('bg-white');
             document.body.classList.remove('bg-dark-900')
             this.darkMode.next(false);
+            this.hljsLoader.setTheme('assets/code-light.css');
         }
     }
 
