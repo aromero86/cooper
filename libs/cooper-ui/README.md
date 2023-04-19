@@ -2,8 +2,6 @@
 
 ##### DOING
 - Modal
-- Typography
-- Breadcrumb
 
 ##### Elegidos
 - [x] Accordion
@@ -11,7 +9,7 @@
 - [x] Avatar
 - [x] Badge
 - [ ] Banner
-- [~] Breadcrumb
+- [x] Breadcrumb
 - [x] Button
 - [ ] Card
 - [ ] Drawer
@@ -35,7 +33,9 @@
 - [ ] Tabs
 - [ ] Toast
 - [ ] Tooltips
-- [ ] Typography
+- [x] Typography
+  - [x] Heading
+  - [x] Paragraph
 
 ##### Descartados
 - [ ] Bottom Navigation

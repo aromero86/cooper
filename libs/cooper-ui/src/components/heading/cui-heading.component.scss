@@ -1,9 +1,9 @@
 :host {
 
-    @apply block font-bold text-dark-900 dark:text-dark-50;
+    @apply block font-medium text-dark-900 dark:text-dark-50;
 
     &.level-1 {
-        @apply text-5xl font-extrabold mt-8 mb-3;
+        @apply text-5xl font-bold mt-8 mb-3;
     }
 
     &.level-2 {
