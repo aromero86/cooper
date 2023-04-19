@@ -1,7 +1,7 @@
 <cui-modal-container>
     <cui-modal-header>
-        <cui-modal-title>Modal title</cui-modal-title>
-        <cui-button>
+        <cui-modal-title alignment="center">Modal title</cui-modal-title>
+        <cui-button color="light" mode="flat" (click)="close()">
             <cui-button-icon name="x"></cui-button-icon>
         </cui-button>
     </cui-modal-header>
@@ -22,8 +22,11 @@
 
     <cui-modal-footer>
         <span class="ml-auto"></span>
-        <cui-button color="dark" size="md" mode="flat" (click)="close()">
-            <cui-button-label>Close modal</cui-button-label>
+        <cui-button color="light" size="md" mode="outline" (click)="close()">
+            <cui-button-label>Cancel</cui-button-label>
+        </cui-button>
+        <cui-button class="ml-2" color="primary" size="md" mode="regular" (click)="close()">
+            <cui-button-label>Save</cui-button-label>
         </cui-button>
     </cui-modal-footer>
 </cui-modal-container>

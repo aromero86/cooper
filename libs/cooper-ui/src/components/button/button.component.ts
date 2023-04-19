@@ -22,10 +22,10 @@ export class CuiButtonComponent {
     }
 
     /** Button color:
-     * - **Values**: `primary` | `accent` | `success` | `warning` | `danger` | `dark`
+     * - **Values**: `primary` | `accent` | `success` | `warning` | `danger` | `dark` | `light`
      * - **Default**: `primary`
     **/
-    @Input() color: 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark' = 'primary';
+    @Input() color: 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark' | 'light' = 'primary';
 
     /** Button appearance mode:
      * - **Values**: `regular` | `outline` | `flat`
