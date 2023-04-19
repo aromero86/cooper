@@ -13,37 +13,60 @@
         }
 
         &.size-xs {
-            @apply text-xs px-2 py-0.5 gap-1;
+            @apply text-xs p-0.5 gap-1;
             div.inner {
                 @apply gap-0.5;
             }
         }
 
         &.size-sm {
-            @apply text-sm px-3 py-1 gap-1;
+            @apply text-sm p-1 gap-1;
             div.inner {
                 @apply gap-0.5;
             }
         }
 
         &.size-md {
-            @apply text-base px-4 py-1.5 gap-1;
+            @apply text-base p-1.5 gap-1;
             div.inner {
                 @apply gap-1;
             }
         }
 
         &.size-lg {
-            @apply text-lg px-5 py-2 gap-2;
+            @apply text-lg p-2 gap-2;
             div.inner {
                 @apply gap-1.5;
             }
         }
 
         &.size-xl {
-            @apply text-xl px-6 py-2.5 gap-2;
+            @apply text-xl p-2.5 gap-2;
             div.inner {
                 @apply gap-2;
+            }
+        }
+
+        &.with-label {
+
+            &.size-xs {
+                @apply px-2;
+            }
+    
+            &.size-sm {
+                @apply px-3;
+            }
+    
+            &.size-md {
+                @apply px-4;
+            }
+    
+            &.size-lg {
+                @apply px-5;
+            }
+    
+            &.size-xl {
+                @apply px-6;
             }
         }
 

@@ -3,8 +3,7 @@
         <cui-heading [level]="4" [noMargin]="true">Modal title</cui-heading>
         <span class="flex-1"></span>
         <cui-button>
-            <cui-icon name="x"></cui-icon>
-            <!-- <span>Example</span> -->
+            <cui-button-icon name="x"></cui-button-icon>
         </cui-button>
     </cui-modal-header>
     <cui-modal-body>
@@ -25,7 +24,7 @@
     <cui-modal-footer>
         <span class="ml-auto"></span>
         <cui-button color="dark" size="md" mode="flat" (click)="close()">
-            <cui-button-text>Close modal</cui-button-text>
+            <cui-button-label>Close modal</cui-button-label>
         </cui-button>
     </cui-modal-footer>
 </cui-modal-container>

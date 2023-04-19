@@ -50,7 +50,7 @@ export const ModalWindowComponentHtml = `
     <cui-modal-footer>
         <span class="ml-auto"></span>
         <cui-button color="dark" size="md" mode="flat" (click)="close()">
-            <cui-button-text>Close modal</cui-button-text>
+            <cui-button-label>Close modal</cui-button-label>
         </cui-button>
     </cui-modal-footer>
 </cui-modal-container>

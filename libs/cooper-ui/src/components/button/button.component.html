@@ -1,5 +1,6 @@
 <button
     cui-ripple
+    [class.with-label]="buttonHasLabel$ | async"
     [class.disabled]="disabled"
     [class.size-xs]="size==='xs'"
     [class.size-sm]="size==='sm'"
@@ -17,10 +18,7 @@
     [class.color-dark]="color==='dark'"
     [class.rounded]="rounded"
 >
-    <!-- TODO: Obtener los hijos que tiene el botón.
-    La idea es que en caso de que solo cuando tenga un icono aplicar el mismo padding vertical y horizontal
-    -->
     <div class="inner">
-        <ng-content #innerContainer></ng-content>
+        <ng-content #innerContainer select="cui-button-icon,cui-button-label"></ng-content>
     </div>
 </button>
