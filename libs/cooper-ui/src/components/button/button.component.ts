@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ContentChild, Input, QueryList } from '@angular/core';
 
 @Component({
     selector: 'cui-button',
@@ -7,6 +7,20 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CuiButtonComponent {
+
+    // @ViewChildren('innerContainer') set innerContainer(elements: any) {
+    //     console.log({ elements })
+    // }
+
+    @ContentChild('innerContainer') set innerContainer(elements: QueryList<any>) {
+        // console.log({ elements })
+    }
+    
+    // @ContentChildren(CuiIconComponent) private set body(value: QueryList<CuiIconComponent>) {
+    //     if (value.length === 0)
+    //         return;
+    //     console.log({ value })
+    // }
 
     /** Button color:
      * - **Values**: `primary` | `accent` | `success` | `warning` | `danger` | `dark`

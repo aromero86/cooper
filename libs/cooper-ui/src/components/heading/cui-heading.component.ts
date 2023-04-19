@@ -25,6 +25,12 @@ export class CuiHeadingComponent implements OnChanges, OnInit {
     **/
     @Input() level = 1;
 
+    /** Remove heading margin
+     *  - If `true` the heading will not have margin
+     *  - **Default**: `false` 
+    **/
+    @Input() noMargin = false;
+
     ngOnChanges(): void {
         this.applyClasses();
     }
@@ -40,6 +46,7 @@ export class CuiHeadingComponent implements OnChanges, OnInit {
         this.applyLevel(4);
         this.applyLevel(5);
         this.applyLevel(6);
+        this.applyNoMarginClasses();
     }
 
     private applyLevel(levelToCheck: number) {
@@ -47,6 +54,14 @@ export class CuiHeadingComponent implements OnChanges, OnInit {
             this.renderer.addClass(this.elementRef.nativeElement, `level-${ levelToCheck }`);
         } else {
             this.renderer.removeClass(this.elementRef.nativeElement, `level-${ levelToCheck }`);
+        }
+    }
+
+    private applyNoMarginClasses(): void {
+        if (this.noMargin) {
+            this.renderer.addClass(this.elementRef.nativeElement, `no-margin`);
+        } else {
+            this.renderer.removeClass(this.elementRef.nativeElement, `no-margin`);
         }
     }
 

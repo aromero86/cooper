@@ -27,7 +27,6 @@ export class CuiScrollerComponent implements OnInit, OnChanges, OnDestroy {
         this.observer = new ResizeObserver(() => {
             const { clientHeight, scrollHeight } = this.host.nativeElement;
             const { clientWidth, scrollWidth } = this.host.nativeElement;
-            console.log({ ne: this.host.nativeElement })
             this.applyHorizontalOverflowClasses(clientWidth !== scrollWidth);
             this.applyVerticalOverflowClasses(clientHeight !== scrollHeight);
         });

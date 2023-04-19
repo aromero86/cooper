@@ -26,4 +26,8 @@
         @apply text-lg mt-4 mb-1;
     }
 
+    &.no-margin {
+        @apply mt-0 mb-0;
+    }
+
 }

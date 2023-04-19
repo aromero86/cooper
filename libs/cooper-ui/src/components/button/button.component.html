@@ -17,7 +17,10 @@
     [class.color-dark]="color==='dark'"
     [class.rounded]="rounded"
 >
+    <!-- TODO: Obtener los hijos que tiene el botón.
+    La idea es que en caso de que solo cuando tenga un icono aplicar el mismo padding vertical y horizontal
+    -->
     <div class="inner">
-        <ng-content></ng-content>
+        <ng-content #innerContainer></ng-content>
     </div>
 </button>

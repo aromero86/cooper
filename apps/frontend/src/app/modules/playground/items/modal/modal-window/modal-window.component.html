@@ -1,5 +1,12 @@
 <cui-modal-container>
-    <cui-modal-header>Modal title</cui-modal-header>
+    <cui-modal-header>
+        <cui-heading [level]="4" [noMargin]="true">Modal title</cui-heading>
+        <span class="flex-1"></span>
+        <cui-button>
+            <cui-icon name="x"></cui-icon>
+            <!-- <span>Example</span> -->
+        </cui-button>
+    </cui-modal-header>
     <cui-modal-body>
         <cui-heading [level]="6">Title 1</cui-heading>
         <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>

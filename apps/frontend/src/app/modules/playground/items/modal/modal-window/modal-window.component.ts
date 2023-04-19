@@ -3,6 +3,7 @@ import { ChangeDetectionStrategy,
 // --------------------------------------------------------
 import { CuiButtonModule,
          CuiHeadingModule,
+         CuiIconModule,
          CuiModalComponent, 
          CuiModalModule, 
          CuiParagraphModule }          from '@cooper/ui';
@@ -14,6 +15,7 @@ import { CuiButtonModule,
     imports: [
         CuiButtonModule,
         CuiHeadingModule,
+        CuiIconModule,
         CuiModalModule,
         CuiParagraphModule,
     ],
