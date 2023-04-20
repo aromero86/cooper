@@ -14,9 +14,6 @@ import { CuiModalTitleComponent }     from './modal-title/cui-modal-title.compon
 export { CuiModalComponent }          from './cui-modal.component';
 export { CuiModalService }            from './cui-modal.service';
 
-// TODO | Modal | Clickable glass should be optional
-// TODO | Modal | Close with escape should be optional
-
 @NgModule({
     imports: [
         CommonModule,

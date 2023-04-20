@@ -1,7 +1,8 @@
 # cooper-ui
 
 ##### DOING
-- Modal
+- Documentation of components
+- Banner
 
 ##### Elegidos
 - [x] Accordion
@@ -25,7 +26,7 @@
   - [ ] Toggle Form Field
   - [ ] Range Form Field
 - [ ] KBD
-- [~] Modal
+- [x] Modal
 - [ ] Popover
 - [ ] Progress
 - [ ] Sidebar

@@ -1,5 +1,8 @@
 import { ChangeDetectionStrategy,
-         Component }              from '@angular/core';
+         Component, 
+         EventEmitter, 
+         HostListener, 
+         Output }              from '@angular/core';
 
 @Component({
     selector: 'cui-modal-container',
@@ -7,4 +10,12 @@ import { ChangeDetectionStrategy,
     styleUrls: ['./cui-modal-container.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CuiModalContainerComponent { }
+export class CuiModalContainerComponent {
+
+    @Output() escape = new EventEmitter<KeyboardEvent>();
+
+    @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(event: KeyboardEvent) {
+        this.escape.emit(event);
+    }
+
+}
