@@ -2,7 +2,7 @@
 
 ##### DOING
 - Documentation of components
-- Banner
+- Actualizar Angular
 
 ##### Elegidos
 - [x] Accordion
