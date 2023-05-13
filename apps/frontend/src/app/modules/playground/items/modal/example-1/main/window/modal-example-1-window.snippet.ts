@@ -1,37 +1,43 @@
-export const ModalWindowComponentTs = `
+export const WindowComponentTs = `
 import { ChangeDetectionStrategy,
          Component }                   from '@angular/core';
 // --------------------------------------------------------
 import { CuiButtonModule,
          CuiHeadingModule,
+         CuiIconModule,
          CuiModalComponent, 
          CuiModalModule, 
          CuiParagraphModule }          from '@cooper/ui';
 
 @Component({
-    templateUrl: './modal-window.component.html',
+    templateUrl: './modal-example-1-window.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
     imports: [
         CuiButtonModule,
         CuiHeadingModule,
+        CuiIconModule,
         CuiModalModule,
         CuiParagraphModule,
     ],
 })
-export class ModalWindowComponent extends CuiModalComponent {
+export class CooperModalExample1WindowComponent extends CuiModalComponent {
 
     close() {
         this.closeModal();
     }
 
 }
-
 `.trim();
 
-export const ModalWindowComponentHtml = `
-<cui-modal-container>
-    <cui-modal-header>Modal title</cui-modal-header>
+export const WindowComponentHtml = `
+<cui-modal-container (escape)="close()">
+    <cui-modal-header>
+        <cui-modal-title alignment="center">Modal title</cui-modal-title>
+        <cui-button color="light" mode="flat" (click)="close()">
+            <cui-button-icon name="x"></cui-button-icon>
+        </cui-button>
+    </cui-modal-header>
     <cui-modal-body>
         <cui-heading [level]="6">Title 1</cui-heading>
         <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
@@ -49,10 +55,12 @@ export const ModalWindowComponentHtml = `
 
     <cui-modal-footer>
         <span class="ml-auto"></span>
-        <cui-button color="dark" size="md" mode="flat" (click)="close()">
-            <cui-button-label>Close modal</cui-button-label>
+        <cui-button color="light" size="md" mode="outline" (click)="close()">
+            <cui-button-label>Cancel</cui-button-label>
+        </cui-button>
+        <cui-button class="ml-2" color="primary" size="md" mode="regular" (click)="close()">
+            <cui-button-label>Save</cui-button-label>
         </cui-button>
     </cui-modal-footer>
 </cui-modal-container>
-
 `.trim();

@@ -9,7 +9,7 @@ import { CuiButtonModule,
          CuiParagraphModule }          from '@cooper/ui';
 
 @Component({
-    templateUrl: './modal-window.component.html',
+    templateUrl: './modal-example-1-window.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
     imports: [
@@ -20,7 +20,7 @@ import { CuiButtonModule,
         CuiParagraphModule,
     ],
 })
-export class ModalWindowComponent extends CuiModalComponent {
+export class CooperModalExample1WindowComponent extends CuiModalComponent {
 
     close() {
         this.closeModal();

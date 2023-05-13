@@ -11,8 +11,10 @@ import { CuiButtonModule,
          CuiScrollerModule }           from '@cooper/ui';
 // --------------------------------------------------------
 import { CooperSandboxModule }         from '../../sandbox/cooper-sandbox.module';
+// --------------------------------------------------------
+import { CooperModalExample1Component } from './example-1/cooper-modal-example-1.component';
 import { CooperModalComponent }        from './cooper-modal.component';
-import { CooperModalExampleComponent } from './modal-example/modal-example.component';
+// import { CooperModalExampleComponent } from './example-1/main/modal-example.component';
 
 const routes: Routes = [
     { path: '', component: CooperModalComponent },
@@ -31,10 +33,12 @@ const routes: Routes = [
         CuiParagraphModule,
         CuiScrollerModule,
         CooperSandboxModule,
+        CooperModalExample1Component
     ],
     declarations: [
         CooperModalComponent,
-        CooperModalExampleComponent,
+        // CooperModalExampleComponent,
+        // CooperModalExample1Component,
     ],
 })
 export class CooperModalModule { }

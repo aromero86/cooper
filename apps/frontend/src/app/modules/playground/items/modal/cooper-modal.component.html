@@ -1,32 +1,16 @@
 <cui-scroller class="flex-1">
     <cui-container class="m-8">
-        <cui-heading [level]="1">Heading 1</cui-heading>
-        <cui-paragraph> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere velit voluptatum? Illum quia culpa, numquam fuga ad saepe impedit porro, quibusdam quas beatae sit veniam libero quae, consequatur eos? </cui-paragraph>
+        <cui-heading [level]="1">Modal</cui-heading>
+        <cui-paragraph>
+            Para crear un modal lo que haremos es crear un componente que herede de la clase
+            <code>CuiModalComponent</code>. Esta clase tiene acceso a un método llamado
+            <code>close</code> que nos permitirá cerrar el modal. El modal podemos formarlo
+            usando los componentes <code>CuiModalContainer</code>,
+            <code>CuiModalHeader</code>, <code>CuiModalTitle</code>, <code>CuiModalBody</code> y
+            <code>CuiModalFooter</code>.
+        </cui-paragraph>
 
-        <cooper-sandbox *ngIf="snippets$ | async as snippets">
-            <cooper-sandbox-view>
-                <cooper-modal-example></cooper-modal-example>
-            </cooper-sandbox-view>
-            <cooper-sandbox-snippet
-                filename="modal.html"
-                language="html"
-                [code]="snippets.ModalExampleComponentHtml"
-            ></cooper-sandbox-snippet>
-            <cooper-sandbox-snippet
-                filename="modal.ts" 
-                language="typescript"
-                [code]="snippets.ModalExampleComponentTs"
-            ></cooper-sandbox-snippet>
-            <cooper-sandbox-snippet
-                filename="window.ts" 
-                language="typescript"
-                [code]="snippets.ModalWindowComponentTs"
-            ></cooper-sandbox-snippet>
-            <cooper-sandbox-snippet
-                filename="window.html" 
-                language="html"
-                [code]="snippets.ModalWindowComponentHtml"
-            ></cooper-sandbox-snippet>
-        </cooper-sandbox>
+        <cooper-modal-example-1></cooper-modal-example-1>
+
     </cui-container>
 </cui-scroller>
