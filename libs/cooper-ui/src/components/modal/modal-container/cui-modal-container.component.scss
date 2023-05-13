@@ -1,0 +1,27 @@
+:host {
+
+    @apply flex justify-center items-start;
+    @apply fixed left-0 top-0 h-screen w-screen;
+    @apply z-10;
+    
+    div.glass {
+        @apply  bg-dark-900 dark:bg-dark-400 opacity-80;
+        @apply fixed left-0 top-0 h-screen w-screen;
+    }
+
+    cui-scroller {
+        @apply flex-1 p-14;
+        @apply z-10;
+        height: calc(100% - 1rem);
+    }
+
+    div.container {
+        align-self: center;
+        justify-self: flex-start;
+        max-width: 900px;
+
+        div.content {
+            @apply relative bg-white rounded-lg shadow dark:bg-dark-700;
+        }
+    }
+}

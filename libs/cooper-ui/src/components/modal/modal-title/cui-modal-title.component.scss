@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex: 1;
+
+    cui-heading.align-left {
+        @apply ml-3;
+    }
+
+    cui-heading.align-center {
+        @apply mx-auto;
+    }
+
+}

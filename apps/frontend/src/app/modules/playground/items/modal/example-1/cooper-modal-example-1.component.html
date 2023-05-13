@@ -1,0 +1,35 @@
+<cui-heading [level]="4">Ejemplo básico</cui-heading>
+<cui-paragraph>
+    En el ejemplo de abajo lo hemos llamado <b>window</b>.
+    Una vez hecho el modal, allí donde se muestre el modal tendremos que inyectar el servicio
+    <code>CuiModalService</code> del cual usaremos su método <code>show</code> para
+    invocar al modal que creamos previamente.
+</cui-paragraph>
+
+<cui-sandbox *ngIf="snippets$ | async as snippets">
+
+    <cui-sandbox-view>
+        <cooper-modal-example-1-main></cooper-modal-example-1-main>
+    </cui-sandbox-view>
+    <cui-sandbox-snippet
+        filename="main.html"
+        language="html"
+        [code]="snippets.MainComponentHtml"
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
+        filename="main.ts" 
+        language="typescript"
+        [code]="snippets.MainComponentTs"
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
+        filename="window.ts" 
+        language="typescript"
+        [code]="snippets.WindowComponentTs"
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
+        filename="window.html" 
+        language="html"
+        [code]="snippets.WindowComponentHtml"
+    ></cui-sandbox-snippet>
+
+</cui-sandbox>

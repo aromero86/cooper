@@ -9,12 +9,10 @@
     <cui-icon *ngIf="modeIsWarning$ | async" name="alert-circle" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
     <cui-icon *ngIf="modeIsDanger$ | async" name="circle-x" [size]="(alertHasBody$ | async)? 'xxl' : 'lg'"></cui-icon>
 
-    <span class="sr-only">Info</span>
     <div class="label-container" [class.big-title]="alertHasBody$ | async">
         <ng-content></ng-content>
     </div>
     <button *ngIf="dismissible$ | async" type="button" data-dismiss-target="#alert-container" aria-label="Close" (click)="dismiss()">
-        <span class="sr-only">Close</span>
         <cui-icon name="x"></cui-icon>
     </button>
 </div>

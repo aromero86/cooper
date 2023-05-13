@@ -1,8 +1,20 @@
 :host {
-    @apply flex flex-col flex-1 overflow-y-auto my-2 mx-2 bg-transparent;
+    @apply flex flex-col overflow-hidden flex-1 my-2 mx-2 bg-transparent;
+
+    &.horizontal {
+        @apply overflow-x-auto;
+    }
+
+    &.vertical {
+        @apply overflow-y-auto;
+    }
 }
 
-:host.with-overflow {
+:host.with-horizontal-overflow {
+    @apply pb-2;
+}
+
+:host.with-vertical-overflow {
     @apply pr-2;
 }
 
@@ -28,4 +40,12 @@
 
 :host::-webkit-scrollbar-thumb:hover {
     @apply bg-dark-300 dark:bg-dark-600;
+}
+
+:host.darken::-webkit-scrollbar-thumb {
+    @apply bg-dark-800 dark:bg-dark-600;
+}
+
+:host.darken::-webkit-scrollbar-thumb:hover {
+    @apply bg-dark-900 dark:bg-dark-500;
 }

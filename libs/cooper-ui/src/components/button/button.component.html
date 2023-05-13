@@ -1,5 +1,6 @@
 <button
     cui-ripple
+    [class.with-label]="buttonHasLabel$ | async"
     [class.disabled]="disabled"
     [class.size-xs]="size==='xs'"
     [class.size-sm]="size==='sm'"
@@ -15,9 +16,10 @@
     [class.color-warning]="color==='warning'"
     [class.color-danger]="color==='danger'"
     [class.color-dark]="color==='dark'"
+    [class.color-light]="color==='light'"
     [class.rounded]="rounded"
 >
     <div class="inner">
-        <ng-content></ng-content>
+        <ng-content #innerContainer select="cui-button-icon,cui-button-label"></ng-content>
     </div>
 </button>

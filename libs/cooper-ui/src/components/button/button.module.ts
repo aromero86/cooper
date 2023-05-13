@@ -1,26 +1,32 @@
-import { CommonModule }          from '@angular/common';
-import { NgModule }               from '@angular/core';
+import { CommonModule }            from '@angular/common';
+import { NgModule }                from '@angular/core';
 // --------------------------------------------------------
-import { CuiDirectivesModule }    from '../../directives';
+import { CuiDirectivesModule }     from '../../directives';
+import { CuiIconModule }           from '../icon/cui-icon.module';
 // --------------------------------------------------------
-import { CuiButtonComponent }     from './button.component';
-import { CuiButtonTextComponent } from './button-text/button-text.component';
+import { CuiButtonComponent }      from './button.component';
+import { CuiButtonIconComponent }  from './button-icon/button-icon.component';
+import { CuiButtonLabelComponent } from './button-label/button-label.component';
 // --------------------------------------------------------
-export { CuiButtonComponent }     from './button.component';
-export { CuiButtonTextComponent } from './button-text/button-text.component';
+export { CuiButtonComponent }      from './button.component';
+export { CuiButtonIconComponent }  from './button-icon/button-icon.component';
+export { CuiButtonLabelComponent } from './button-label/button-label.component';
 
 @NgModule({
     imports: [
         CommonModule,
         CuiDirectivesModule,
+        CuiIconModule,
     ],
     exports: [
         CuiButtonComponent,
-        CuiButtonTextComponent,
+        CuiButtonIconComponent,
+        CuiButtonLabelComponent,
     ],
     declarations: [
         CuiButtonComponent,
-        CuiButtonTextComponent,
+        CuiButtonIconComponent,
+        CuiButtonLabelComponent,
     ],
 })
 export class CuiButtonModule { }

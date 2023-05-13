@@ -1,4 +1,11 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy,
+         Component,
+         ContentChildren,
+         Input,
+         QueryList }               from '@angular/core';
+import { BehaviorSubject }         from 'rxjs';
+// --------------------------------------------------------
+import { CuiButtonLabelComponent } from './button.module';
 
 @Component({
     selector: 'cui-button',
@@ -8,11 +15,17 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 })
 export class CuiButtonComponent {
 
+    private buttonHasLabel = new BehaviorSubject(false);
+    public buttonHasLabel$ = this.buttonHasLabel.asObservable();
+    @ContentChildren(CuiButtonLabelComponent) private set buttonLabels(value: QueryList<CuiButtonLabelComponent>) {
+        this.buttonHasLabel.next(value.length > 0);
+    }
+
     /** Button color:
-     * - **Values**: `primary` | `accent` | `success` | `warning` | `danger` | `dark`
+     * - **Values**: `primary` | `accent` | `success` | `warning` | `danger` | `dark` | `light`
      * - **Default**: `primary`
     **/
-    @Input() color: 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark' = 'primary';
+    @Input() color: 'primary' | 'accent' | 'success' | 'warning' | 'danger' | 'dark' | 'light' = 'primary';
 
     /** Button appearance mode:
      * - **Values**: `regular` | `outline` | `flat`

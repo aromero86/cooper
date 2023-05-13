@@ -1,0 +1,32 @@
+<cui-modal-container (escape)="close()">
+    <cui-modal-header>
+        <cui-modal-title alignment="center">Modal title</cui-modal-title>
+        <cui-button color="light" mode="flat" (click)="close()">
+            <cui-button-icon name="x"></cui-button-icon>
+        </cui-button>
+    </cui-modal-header>
+    <cui-modal-body>
+        <cui-heading [level]="6">Title 1</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+        <cui-heading [level]="6">Title 2</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+        <cui-heading [level]="6">Title 3</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+        <cui-heading [level]="6">Title 4</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+        <cui-heading [level]="6">Title 5</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+        <cui-heading [level]="6">Title 6</cui-heading>
+        <cui-paragraph>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sit quos dolorum, soluta nulla blanditiis maiores optio impedit numquam iste et, reprehenderit autem, architecto cumque ullam. Labore enim delectus natus.</cui-paragraph>
+    </cui-modal-body>
+
+    <cui-modal-footer>
+        <span class="ml-auto"></span>
+        <cui-button color="light" size="md" mode="outline" (click)="close()">
+            <cui-button-label>Cancel</cui-button-label>
+        </cui-button>
+        <cui-button class="ml-2" color="primary" size="md" mode="regular" (click)="close()">
+            <cui-button-label>Save</cui-button-label>
+        </cui-button>
+    </cui-modal-footer>
+</cui-modal-container>
