@@ -1,21 +1,21 @@
 import { ChangeDetectionStrategy,
          Component, 
          Input, 
-         OnInit}                   from '@angular/core';
+         OnInit }                  from '@angular/core';
 import { BehaviorSubject }         from 'rxjs';
 // --------------------------------------------------------
-import { CooperSandboxService }    from '../cooper-sandbox.service';
+import { CuiSandboxService }    from '../cui-sandbox.service';
 
 @Component({
-    selector: 'cooper-sandbox-snippet',
-    templateUrl: './cooper-sandbox-snippet.component.html',
-    styleUrls: ['./cooper-sandbox-snippet.component.scss'],
+    selector: 'cui-sandbox-snippet',
+    templateUrl: './cui-sandbox-snippet.component.html',
+    styleUrls: ['./cui-sandbox-snippet.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CooperSandboxSnippetComponent implements OnInit {
+export class CuiSandboxSnippetComponent implements OnInit {
 
     constructor(
-        private sandboxService: CooperSandboxService,
+        private sandboxService: CuiSandboxService,
     ) { }
 
     @Input() filename = 'Example';

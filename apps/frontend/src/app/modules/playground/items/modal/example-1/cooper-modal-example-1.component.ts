@@ -4,9 +4,9 @@ import { ChangeDetectionStrategy,
 import { BehaviorSubject }         from 'rxjs';
 // --------------------------------------------------------
 import { CuiHeadingModule,
-         CuiParagraphModule }      from '@cooper/ui';
+         CuiParagraphModule,
+         CuiSandboxModule }              from '@cooper/ui';
 // --------------------------------------------------------
-import { CooperSandboxModule }     from '../../../sandbox/cooper-sandbox.module';
 // --------------------------------------------------------
 import { CooperModalExample1MainComponent } from './main/modal-example-1-main.component';
 import { MainComponentHtml,
@@ -23,7 +23,7 @@ import { WindowComponentHtml,
         CommonModule,
         CuiHeadingModule,
         CuiParagraphModule,
-        CooperSandboxModule,
+        CuiSandboxModule,
         CooperModalExample1MainComponent,
     ],
 })

@@ -1,10 +1,10 @@
 import { Injectable }                    from '@angular/core';
 import { BehaviorSubject, map }               from 'rxjs';
 // --------------------------------------------------------
-import { CooperSandboxSnippetComponent } from './cooper-sandbox.module';
+import { CuiSandboxSnippetComponent }   from './cui-sandbox.module';
 
 @Injectable()
-export class CooperSandboxService {
+export class CuiSandboxService {
 
     private snippets = new BehaviorSubject<{ filename: string, show: () => void, hide: () => void }[]>([]);
     public snippetsFilenames$ = this.snippets.asObservable()
@@ -13,7 +13,7 @@ export class CooperSandboxService {
     private selectedFilename = new BehaviorSubject('');
     public selectedFilename$ = this.selectedFilename.asObservable();
 
-    registerSnippet(snippet: CooperSandboxSnippetComponent): void {
+    registerSnippet(snippet: CuiSandboxSnippetComponent): void {
         const snippets = this.snippets.getValue();
         snippets.push({
             filename: snippet.filename,

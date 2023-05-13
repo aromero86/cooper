@@ -6,30 +6,30 @@
     invocar al modal que creamos previamente.
 </cui-paragraph>
 
-<cooper-sandbox *ngIf="snippets$ | async as snippets">
+<cui-sandbox *ngIf="snippets$ | async as snippets">
 
-    <cooper-sandbox-view>
+    <cui-sandbox-view>
         <cooper-modal-example-1-main></cooper-modal-example-1-main>
-    </cooper-sandbox-view>
-    <cooper-sandbox-snippet
+    </cui-sandbox-view>
+    <cui-sandbox-snippet
         filename="main.html"
         language="html"
         [code]="snippets.MainComponentHtml"
-    ></cooper-sandbox-snippet>
-    <cooper-sandbox-snippet
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
         filename="main.ts" 
         language="typescript"
         [code]="snippets.MainComponentTs"
-    ></cooper-sandbox-snippet>
-    <cooper-sandbox-snippet
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
         filename="window.ts" 
         language="typescript"
         [code]="snippets.WindowComponentTs"
-    ></cooper-sandbox-snippet>
-    <cooper-sandbox-snippet
+    ></cui-sandbox-snippet>
+    <cui-sandbox-snippet
         filename="window.html" 
         language="html"
         [code]="snippets.WindowComponentHtml"
-    ></cooper-sandbox-snippet>
+    ></cui-sandbox-snippet>
 
-</cooper-sandbox>
+</cui-sandbox>

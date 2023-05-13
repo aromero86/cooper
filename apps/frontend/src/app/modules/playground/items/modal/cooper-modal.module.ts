@@ -1,20 +1,15 @@
-import { CommonModule }                from '@angular/common';
-import { NgModule }                    from '@angular/core';
+import { CommonModule }                 from '@angular/common';
+import { NgModule }                     from '@angular/core';
 import { RouterModule,
-         Routes }                      from '@angular/router';
-import { HighlightModule }             from 'ngx-highlightjs';
+         Routes }                       from '@angular/router';
 // --------------------------------------------------------
-import { CuiButtonModule,
-         CuiContainerModule,
+import { CuiContainerModule,
          CuiHeadingModule,
          CuiParagraphModule,
-         CuiScrollerModule }           from '@cooper/ui';
-// --------------------------------------------------------
-import { CooperSandboxModule }         from '../../sandbox/cooper-sandbox.module';
+         CuiScrollerModule }            from '@cooper/ui';
 // --------------------------------------------------------
 import { CooperModalExample1Component } from './example-1/cooper-modal-example-1.component';
-import { CooperModalComponent }        from './cooper-modal.component';
-// import { CooperModalExampleComponent } from './example-1/main/modal-example.component';
+import { CooperModalComponent }         from './cooper-modal.component';
 
 const routes: Routes = [
     { path: '', component: CooperModalComponent },
@@ -26,19 +21,14 @@ const routes: Routes = [
         CommonModule,
         RouterModule,
         RouterModule.forChild(routes),
-        HighlightModule,
-        CuiButtonModule,
         CuiContainerModule,
         CuiHeadingModule,
         CuiParagraphModule,
         CuiScrollerModule,
-        CooperSandboxModule,
         CooperModalExample1Component
     ],
     declarations: [
         CooperModalComponent,
-        // CooperModalExampleComponent,
-        // CooperModalExample1Component,
     ],
 })
 export class CooperModalModule { }
