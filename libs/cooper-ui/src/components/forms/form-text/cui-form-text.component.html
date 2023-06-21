@@ -1,0 +1,16 @@
+<!-- Label -->
+<ng-content select="cui-form-label"></ng-content>
+
+<!-- Input -->
+<input type="text" [class.danger]="showValidationMessages$ | async" [ngModel]="value$ | async" (ngModelChange)="value = $event" (blur)="markAsTouched()">
+
+<!-- Helper text -->
+<ng-container *ngIf="(showValidationMessages$ | async) === false">
+    <ng-content select="cui-form-helper-text"></ng-content>
+</ng-container>
+
+<!-- Validation messages -->
+<ng-container *ngIf="showValidationMessages$ | async">
+    <cui-form-validation-message *ngFor="let validationErrorMessage of (this.validationErrorMessages$ | async)">{{ validationErrorMessage }}</cui-form-validation-message>
+</ng-container>
+<ng-content select="cui-form-validation-message"></ng-content>

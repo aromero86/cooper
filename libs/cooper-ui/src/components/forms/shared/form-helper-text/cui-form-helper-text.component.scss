@@ -1,0 +1,8 @@
+:host {
+    @apply block;
+
+    ::ng-deep div.container {
+        @apply block mt-2 text-sm text-dark-500 dark:text-dark-400;
+    }
+
+}

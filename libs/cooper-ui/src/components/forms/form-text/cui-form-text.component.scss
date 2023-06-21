@@ -1,0 +1,46 @@
+:host {
+    @apply block;
+
+    input {
+        @apply block
+            border 
+            p-2.5
+            rounded-lg
+            text-sm
+            w-full
+
+            bg-dark-50
+            dark:bg-dark-700
+
+            border-dark-300
+            dark:border-dark-600 
+
+            placeholder-dark-500
+            dark:placeholder-dark-400
+
+            text-dark-900
+            dark:text-white
+
+            focus:ring-primary-500
+            dark:focus:ring-primary-500
+
+            focus:border-primary-500
+            dark:focus:border-primary-500;
+    }
+
+    input.danger {
+        @apply
+            border-danger-300
+            dark:border-danger-600 
+
+            placeholder-danger-500
+            dark:placeholder-danger-400
+
+            focus:ring-danger-500
+            dark:focus:ring-danger-500
+
+            focus:border-danger-500
+            dark:focus:border-danger-500;
+    }
+
+}

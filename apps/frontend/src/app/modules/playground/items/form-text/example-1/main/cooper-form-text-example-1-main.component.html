@@ -1,0 +1,30 @@
+<form>
+
+    <cui-form-spacer></cui-form-spacer>
+
+    <!-- First name -->
+    <cui-form-text [formControl]="formGroup.controls.firstName">
+        <cui-form-label for="firstName">Nombre (*)</cui-form-label>
+        <cui-form-helper-text>Introduce aquí tu nombre</cui-form-helper-text>
+    </cui-form-text>
+
+    <cui-form-spacer></cui-form-spacer>
+
+    <!-- Last name -->
+    <cui-form-label for="lastName">Apellidos (*)</cui-form-label>
+    <cui-form-text id="lastName" [formControl]="formGroup.controls.lastName"></cui-form-text>
+
+    <cui-form-spacer></cui-form-spacer>
+
+    <div class="flex justify-end">
+
+        <cui-button (click)="clear()">
+            <cui-button-label>Clear</cui-button-label>
+        </cui-button>
+
+        <cui-button [disabled]="formGroup.touched && !formGroup.valid" (click)="showFormValues()">
+            <cui-button-label>Show values</cui-button-label>
+        </cui-button>
+    </div>
+
+</form>

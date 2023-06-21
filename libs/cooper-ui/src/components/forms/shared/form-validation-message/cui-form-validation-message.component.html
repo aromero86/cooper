@@ -1,0 +1,10 @@
+<div class="message-container"
+    [class.danger]="mode==='danger'"
+    [class.warning]="mode==='warning'"
+    [class.success]="mode==='success'"
+>
+    <cui-icon *ngIf="mode==='danger'" name="alert-circle"></cui-icon>
+    <cui-icon *ngIf="mode==='warning'" name="help"></cui-icon>
+    <cui-icon *ngIf="mode==='success'" name="circle-check"></cui-icon>
+    <div class="message"><ng-content></ng-content></div>
+</div>

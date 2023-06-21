@@ -13,6 +13,7 @@ const routes: Routes = [
             { path: 'badge', loadChildren: () => import('./items/badge/cooper-badge.module').then(m => m.CooperBadgeModule) },
             { path: 'breadcrumbs', loadChildren: () => import('./items/breadcrumbs/cooper-breadcrumbs.module').then(m => m.CooperBreadcrumbsModule) },
             { path: 'button', loadChildren: () => import('./items/button/cooper-button.module').then(m => m.CooperButtonModule) },
+            { path: 'form-text', loadChildren: () => import('./items/form-text/cooper-form-text.module').then(m => m.CooperFormTextModule) },
             { path: 'modal', loadChildren: () => import('./items/modal/cooper-modal.module').then(m => m.CooperModalModule) },
             { path: '',  redirectTo: 'badge', pathMatch: 'full' },
             { path: '**', redirectTo: 'badge' },

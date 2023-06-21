@@ -1,0 +1,8 @@
+:host {
+    @apply block;
+
+    label {
+        @apply block mb-2 text-sm font-medium text-dark-900 dark:text-white;
+    }
+
+}

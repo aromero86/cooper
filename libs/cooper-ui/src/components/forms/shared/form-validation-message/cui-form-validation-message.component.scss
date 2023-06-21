@@ -1,0 +1,20 @@
+:host {
+    @apply block;
+
+    div.message-container {
+        @apply flex gap-1 mt-2 text-sm;
+
+        &.danger {
+            @apply text-danger-600 dark:text-danger-500;
+        }
+    
+        &.warning {
+            @apply text-warning-600 dark:text-warning-500;
+        }
+    
+        &.success {
+            @apply text-success-600 dark:text-success-500;
+        }
+    }
+
+}
