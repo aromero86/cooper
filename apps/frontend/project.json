@@ -77,7 +77,7 @@
       }
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/apps/frontend"],
       "options": {
         "jestConfig": "apps/frontend/jest.config.ts",

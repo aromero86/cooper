@@ -23,7 +23,7 @@
       "defaultConfiguration": "production"
     },
     "test": {
-      "executor": "@nrwl/jest:jest",
+      "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/libs/cooper-ui"],
       "options": {
         "jestConfig": "libs/cooper-ui/jest.config.ts",
