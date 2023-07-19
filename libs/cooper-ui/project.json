@@ -1,11 +1,12 @@
 {
+  "name": "cooper-ui",
   "projectType": "library",
   "sourceRoot": "libs/cooper-ui/src",
   "prefix": "cooper",
   "targets": {
     "build": {
       "executor": "@nrwl/angular:package",
-      "outputs": ["dist/libs/cooper-ui"],
+      "outputs": ["{workspaceRoot}/dist/libs/cooper-ui"],
       "options": {
         "project": "libs/cooper-ui/ng-package.json",
         "tailwindConfig": "libs/cooper-ui/tailwind.config.js"
@@ -22,7 +23,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/cooper-ui"],
+      "outputs": ["{workspaceRoot}/coverage/libs/cooper-ui"],
       "options": {
         "jestConfig": "libs/cooper-ui/jest.config.ts",
         "passWithNoTests": true
