@@ -19,14 +19,14 @@
     "@angular/platform-browser": "16.1.5",
     "@angular/platform-browser-dynamic": "16.1.5",
     "@angular/router": "16.1.5",
-    "@nrwl/angular": "16.4.0",
     "@tailwindcss/forms": "^0.5.3",
     "angular-tabler-icons": "^1.92.0",
     "nanoid": "^4.0.0",
     "ngx-highlightjs": "^7.0.1",
     "rxjs": "7.8.1",
     "tslib": "^2.3.0",
-    "zone.js": "0.13.1"
+    "zone.js": "0.13.1",
+    "@nx/angular": "16.4.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "16.1.4",

@@ -6,7 +6,7 @@
   "prefix": "cooper",
   "targets": {
     "build": {
-      "executor": "@nrwl/angular:package",
+      "executor": "@nx/angular:package",
       "outputs": ["{workspaceRoot}/dist/libs/cooper-ui"],
       "options": {
         "project": "libs/cooper-ui/ng-package.json",
