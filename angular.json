@@ -1,8 +1,0 @@
-{
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "cooper-ui": "libs/cooper-ui",
-    "frontend": "apps/frontend"
-  }
-}
