@@ -36,7 +36,6 @@
     "@angular/cli": "~15.0.0",
     "@angular/compiler-cli": "16.1.5",
     "@angular/language-service": "16.1.5",
-    "@nrwl/cypress": "16.4.0",
     "@nrwl/eslint-plugin-nx": "16.4.0",
     "@nrwl/jest": "16.4.0",
     "@types/jest": "29.4.4",
@@ -64,6 +63,7 @@
     "typescript": "5.1.6",
     "nx-cloud": "16.1.0",
     "@nx/workspace": "16.4.0",
-    "@nx/linter": "16.4.0"
+    "@nx/linter": "16.4.0",
+    "@nx/cypress": "16.4.0"
   }
 }
